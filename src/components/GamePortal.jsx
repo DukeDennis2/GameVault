@@ -13,28 +13,28 @@ const GamePortal = () => {
 
   const games = [
     {
-      id: 'cod-mw',
-      name: 'Call of Duty: Modern Warfare',
-      series: 'Call of Duty',
-      description: 'Elite military operations in modern warfare scenarios with tactical combat',
-      gradient: 'from-green-800 via-green-700 to-olive-600',
-      image: 'https://gaming-cdn.com/images/products/6936/616x353/call-of-duty-modern-warfare-remastered-remastered-playstation-4-game-playstation-store-europe-cover.jpg?v=1730133958',
-      icon: Target,
-      categories: ['characters', 'weapons', 'vehicles']
+    id: 'sw-unlimited',
+    name: 'Star Wars',
+    series: 'Star Wars',
+    description: 'Epic battles across the galaxy with iconic heroes, starships, and factions from the Star Wars universe',
+    gradient: 'from-blue-900 via-indigo-800 to-slate-700',
+    image: 'https://i.etsystatic.com/23313394/r/il/42204a/2316127314/il_fullxfull.2316127314_93m1.jpg',
+    icon: Gamepad2,
+    categories: ['characters', 'weapons', 'vehicles']
     },
     {
       id: 'cod-mw2',
-      name: 'Call of Duty: Modern Warfare 2',
+      name: 'Call of Duty: Modern Warfare',
       series: 'Call of Duty',
       description: 'Continuation of the Modern Warfare saga with intense global conflicts',
       gradient: 'from-slate-800 via-gray-700 to-slate-600',
-      image: 'https://i.ebayimg.com/images/g/RScAAOSwyexmjEdw/s-l1200.jpg',
-      icon: Shield,
+      image: 'https://assetsio.gnwcdn.com/call_of_duty_modern_warfare_trilogy.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp',
+      icon: Crosshair,
       categories: ['characters', 'weapons', 'vehicles']
     },
     {
       id: 'ac-series',
-      name: "Assassin's Creed Collection",
+      name: "Assassin's Creed",
       series: "Assassin's Creed",
       description: 'Historical adventures spanning centuries with stealth and parkour',
       gradient: 'from-red-800 via-amber-700 to-yellow-600',
@@ -701,26 +701,36 @@ const GamePortal = () => {
   const HomePage = () => (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-purple-900/30"></div>
-        <div className="relative container mx-auto px-6 py-20 text-center">
-          <div className="animate-pulse mb-4">
-            <Gamepad2 className="mx-auto h-20 w-20 text-blue-400" />
+        <div className="relative overflow-hidden">
+          {/* Background Image Layer */}
+          <div className="absolute inset-0">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/11/29/04/17/controller-1867121_1280.jpg" // Replace with your preferred controller image URL
+              alt="Game controller background"
+              className="w-full h-full object-cover opacity-10 mix-blend-soft-light"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-purple-900/30"></div>
           </div>
-          <h1 className="text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-            GameVault
-          </h1>
-          <p className="text-2xl text-slate-300 max-w-3xl mx-auto mb-4">
-            Your Gateway to Gaming Legends
-          </p>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-            Explore legendary gaming universes. Choose your adventure and dive deep into characters, weapons, vehicles, and more.
-          </p>
-          <div className="animate-bounce">
-            <ChevronDown className="mx-auto h-10 w-10 text-blue-400" />
+
+          {/* Content Layer */}
+          <div className="relative container mx-auto px-6 py-20 text-center">
+            <div className="animate-pulse mb-4">
+              <Gamepad2 className="mx-auto h-20 w-20 text-blue-400" />
+            </div>
+            <h1 className="text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+              GameVault
+            </h1>
+            <p className="text-2xl text-slate-300 max-w-3xl mx-auto mb-4">
+              Your Gateway to Gaming Legends
+            </p>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
+              Explore legendary gaming universes. Choose your adventure and dive deep into characters, weapons, vehicles, and more.
+            </p>
+            <div className="animate-bounce">
+              <ChevronDown className="mx-auto h-10 w-10 text-blue-400" />
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Game Selection */}
       <div className="container mx-auto px-6 py-16">
@@ -737,7 +747,7 @@ const GamePortal = () => {
             return (
               <div
                 key={game.id}
-                className="group relative bg-slate-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer"
+                className="group relative bg-slate-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-50/20 cursor-pointer"
                 onClick={() => {
                   setCurrentPage(game.id);
                   setSelectedCategory('characters');
@@ -745,17 +755,17 @@ const GamePortal = () => {
                 }}
               >
                 {/* Game Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={game.image}
-                    alt={game.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${game.gradient} opacity-70`}></div>
-                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-3">
-                    <IconComponent className="h-8 w-8 text-white" />
-                  </div>
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={game.image}
+                  alt={game.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-100"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-t ${game.gradient} opacity-70`}></div>
+                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-3">
+                  <IconComponent className="h-8 w-8 text-white" />
                 </div>
+              </div>
 
                 {/* Game Info */}
                 <div className="p-8">
