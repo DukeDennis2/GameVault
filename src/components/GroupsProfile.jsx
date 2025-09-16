@@ -34,9 +34,9 @@ const GroupsProfile = ({ item, game, onBack }) => {
               <span className="font-bold text-white">Type:</span> {item.type}
             </p>
             
-            <div className="text-base text-slate-200 leading-relaxed space-y-4">
-              <p className="font-semibold">{item.description}</p>
-              <p className="font-light">{item.fullDescription}</p>
+            <div className="text-base  leading-relaxed space-y-4">
+              <p className="font-semibold text-slate-100">{item.description}</p>
+              <p className="font-light text-slate-400">{item.fullDescription}</p>
             </div>
             
             <div className="space-y-3">

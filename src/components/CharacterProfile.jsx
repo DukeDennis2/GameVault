@@ -38,9 +38,9 @@ const CharacterProfile = ({ item, game, onBack, selectedCategory }) => {
               <span className="font-bold text-white">Role:</span> {item.role}
             </p>
             
-            <div className="text-base text-slate-200 leading-relaxed space-y-4">
-              <p className="font-semibold">{item.description}</p>
-              <p className="font-light">{item.fullDescription}</p>
+            <div className="text-base leading-relaxed space-y-4">
+              <p className="font-semibold text-slate-100">{item.description}</p>
+              <p className="font-light text-slate-400">{item.fullDescription}</p>
             </div>
             
             

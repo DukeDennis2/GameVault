@@ -315,7 +315,7 @@ const GamePage = () => {
                   className={`group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer ${
                     isVisible[item.id] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
-                  onClick={() => handleItemClick(item)} // This now handles all clicks
+                  onClick={() => handleItemClick(item)} 
                 >
                   {/* IMAGE */}
                   <div className={`relative ${selectedCategory === 'characters' ? 'h-64' : 'h-48'} overflow-hidden`}>
@@ -328,21 +328,21 @@ const GamePage = () => {
                     <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-2">
                       <IconComponent className="h-6 w-6 text-white" />
                     </div>
-                    <div className="absolute bottom-4 left-4">
+                    
+                  </div>
+
+                  {/* CONTENT */}
+                
+                  <div className="p-6">
+                    {/* Description + Explore Button (removed from here) */}
+                    <div className="mb-6">
                       <h3 className="text-2xl font-bold text-white mb-1">
                         {item.name}
                       </h3>
                       <p className="text-white/80 text-sm font-medium">
                         {item.role || item.type}
                       </p>
-                    </div>
-                  </div>
-
-                  {/* CONTENT */}
-                  <div className="p-6">
-                    {/* Description + Explore Button (removed from here) */}
-                    <div className="mb-6">
-                      <p className="text-sm font-[150] text-slate-300 leading-relaxed">
+                      <p className="text-sm font-[190] text-slate-500 leading-relaxed">
                         {item.description}
                       </p>
                     </div>
