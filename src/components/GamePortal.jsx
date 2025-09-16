@@ -19,6 +19,9 @@ const GamePortal = () => {
   const [expandedItemId, setExpandedItemId] = useState(null);
   const [showProfile, setShowProfile] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
+
   
 const iconMapping = {
     Sword: Sword,
@@ -51,6 +54,7 @@ const iconMapping = {
     setIsVisible({});
   };
 
+  
   useEffect(() => {
     if (currentPage !== 'home') {
       const timer = setTimeout(() => {
@@ -195,7 +199,7 @@ const GamePage = () => {
     const categorySummaries = {
       characters: {
         title: "Meet the Heroes & Villains",
-        description: "Dive into the bios of the iconic figures who shape this universe, from legendary protagonists to notorious antagonists."
+        description: "Click onto a character to leap in faith into their universe, from hooded warriors who move through shadows, to rebels battling empires among the stars, and other fearless heroes and villains from worlds of action and adventure."
       },
       weapons: {
         title: "Arsenal and Equipment",
@@ -334,23 +338,6 @@ const GamePage = () => {
                       <p className="text-sm font-[150] text-slate-300 leading-relaxed">
                         {item.description}
                       </p>
-                    </div>
-
-                    {/* TRAITS/Specs */}
-                    <div className="space-y-3">
-                      <h4 className="text-sm font-semibold text-slate-200 uppercase tracking-wide">
-                        {isCharacter ? 'Key Abilities' : 'Specifications'}
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {(item.traits || item.specs || []).map((spec, specIndex) => (
-                          <span
-                            key={specIndex}
-                            className={`px-3 py-1 bg-gradient-to-r ${game?.gradient} text-white text-xs rounded-full shadow-md`}
-                          >
-                            {spec}
-                          </span>
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </div>

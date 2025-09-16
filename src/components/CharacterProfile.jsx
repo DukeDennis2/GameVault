@@ -1,7 +1,10 @@
 import React from 'react';
 import { ArrowLeft, Home, User } from 'lucide-react';
 
-const CharacterProfile = ({ item, game, onBack }) => {
+// 'selectedCategory' is now received as a prop
+const CharacterProfile = ({ item, game, onBack, selectedCategory }) => {
+  const isCharacter = selectedCategory === 'characters';
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white p-8">
       <div className="container mx-auto">
@@ -40,19 +43,28 @@ const CharacterProfile = ({ item, game, onBack }) => {
               <p className="font-light">{item.fullDescription}</p>
             </div>
             
+            
             <div className="space-y-3">
               <h2 className="text-2xl font-bold mt-8 border-b-2 border-slate-700 pb-2">
                 Traits
               </h2>
-              <div className="flex flex-wrap gap-2">
-                {item.traits.map((trait, index) => (
-                  <span
-                    key={index}
-                    className={`px-3 py-1 bg-gradient-to-r ${game?.gradient} text-white text-xs rounded-full shadow-md`}
-                  >
-                    {trait}
-                  </span>
-                ))}
+              
+              {/* TRAITS/Specs */}
+              {/* This section now correctly uses the 'isCharacter' variable */}
+              <div className="space-y-3">
+                <h4 className="text-sm font-semibold text-slate-200 uppercase tracking-wide">
+                  {isCharacter ? 'Key Abilities' : 'Specifications'}
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {(item.traits || item.specs || []).map((spec, specIndex) => (
+                    <span
+                      key={specIndex}
+                      className={`px-3 py-1 bg-gradient-to-r ${game?.gradient} text-white text-xs rounded-full shadow-md`}
+                    >
+                      {spec}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
