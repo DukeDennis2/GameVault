@@ -18,7 +18,7 @@ export const games = [
     categories: ['characters', 'weapons', 'vehicles']
     },
     {
-      id: 'cod-mw2',
+      id: 'cod-mw',
       name: 'Call of Duty: Modern Warfare',
       series: 'Call of Duty',
       description: 'Continuation of the Modern Warfare saga with intense global conflicts',
@@ -38,136 +38,329 @@ export const games = [
       categories: ['characters', 'weapons', 'armor', 'locations'],
   }
 ];
+
+      // New section to hold category summaries
+  const categorySummaries = {
+    characters: {
+      title: "Meet the Heroes & Villains",
+      description: "Click onto a character to leap and faith into their universe, from legendary protagonists to notorious antagonists."
+    },
+    weapons: {
+      title: "Arsenal and Equipment",
+      description: "Explore the vast collection of weapons, from classic firearms to futuristic blasters and specialized gear."
+    },
+    vehicles: {
+      title: "Vehicles of War",
+      description: "Discover the powerful machines that dominate the battlefield, including tanks, jets, and starships."
+    },
+    "pieces of eden": {
+      title: "Pieces of Eden",
+      description: "Uncover the mysterious artifacts of the First Civilization, ancient relics with immense power and global influence."
+    },
+    armor: {
+      title: "Protective Gear",
+      description: "Examine the various types of armor and protective suits worn by heroes and villains throughout the series."
+    },
+    locations: {
+      title: "Iconic Locations",
+      description: "Journey to the legendary cities, battlefields, and hidden sanctuaries that define this world."
+    }
+  };
     
 //CALL OF DUTY SECTION
 export const gameData = {
     'cod-mw': {
       characters: [
-        {
-          id: 1,
-          name: "Captain Price",
-          role: "Task Force 141 Leader",
-          description: "Veteran SAS officer and leader of Task Force 141. Known for his tactical expertise, iconic mustache, and unwavering loyalty.",
-          traits: ["Leadership", "Tactical Genius", "Combat Veteran"],
-          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=400&fit=crop&crop=face",
-          icon: Target
-        },
-        {
-          id: 2,
-          name: "Soap MacTavish",
-          role: "SAS Sergeant",
-          description: "Scottish SAS sergeant known for his demolitions expertise and quick thinking under pressure.",
-          traits: ["Demolitions Expert", "Quick Thinking", "Loyal Soldier"],
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
-          icon: Zap
-        },
-        {
-          id: 14,
-          name: "Sergeant Foley",
-          role: "Army Ranger Sergeant",
-          description: "Experienced Army Ranger sergeant leading troops through intense urban warfare in Washington D.C.",
-          traits: ["Urban Combat Expert", "Squad Leader", "Battle-Hardened"],
-          image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=400&fit=crop&crop=face",
-          icon: Shield
-        },
-        {
-          id: 15,
-          name: "Corporal Dunn",
-          role: "Army Ranger Corporal",
-          description: "Reliable Army Ranger corporal serving under Sergeant Foley in the defense of America.",
-          traits: ["Reliability", "Team Support", "Combat Ready"],
-          image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=face",
-          icon: Users
-        },
-        {
-          id: 16,
-          name: "Private Ramirez",
-          role: "Army Ranger Private",
-          description: "Young but skilled Army Ranger private fighting to defend the homeland against invasion.",
-          traits: ["Determination", "Quick Learner", "Brave Soldier"],
-          image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
-          icon: Star
-        },
-        {
-          id: 17,
-          name: "General Shepherd",
-          role: "U.S. Army General",
-          description: "High-ranking U.S. Army general with complex motivations and controversial methods.",
-          traits: ["Strategic Mind", "Authority", "Controversial"],
-          image: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
-          icon: Crown
-        },
-        {
-          id: 18,
-          name: "Gaz",
-          role: "SAS Operative",
-          description: "Elite SAS operative and trusted member of Captain Price's team, known for his loyalty and skill.",
-          traits: ["Elite Training", "Loyal Teammate", "Precision Shooter"],
-          image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
-          icon: Crosshair
-        },
-        {
-          id: 19,
-          name: "Roach",
-          role: "Task Force 141 Operative",
-          description: "Silent but deadly Task Force 141 operative specializing in covert operations and stealth missions.",
-          traits: ["Stealth Operations", "Silent Professional", "Covert Specialist"],
-          image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face",
-          icon: Shield
-        },
-        {
-          id: 20,
-          name: "MacMillan",
-          role: "SAS Captain",
-          description: "Experienced SAS captain and Price's former mentor, known for his sniper expertise and tactical knowledge.",
-          traits: ["Sniper Expert", "Mentor Figure", "Tactical Wisdom"],
-          image: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop&crop=face",
-          icon: Target
-        }
-      ],
-      weapons: [
-        {
-          id: 3,
-          name: "M4A1 Carbine",
-          type: "Assault Rifle",
-          description: "Standard issue assault rifle with excellent versatility and reliability in combat situations.",
-          specs: ["5.56×45mm NATO", "30-round magazine", "Full-auto capable"],
-          image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=300&h=200&fit=crop",
-          icon: Crosshair
-        },
-        {
-          id: 4,
-          name: "Desert Eagle",
-          type: "Handgun",
-          description: "High-powered semi-automatic pistol favored by special forces for its stopping power.",
-          specs: [".50 AE caliber", "7-round magazine", "Semi-automatic"],
-          image: "https://images.unsplash.com/photo-1544717684-7ba720c2de70?w=300&h=200&fit=crop",
-          icon: Crosshair
-        }
-      ],
-      vehicles: [
-        {
-          id: 5,
-          name: "Humvee",
-          type: "Military Vehicle",
-          description: "All-terrain military utility vehicle designed for harsh combat environments.",
-          specs: ["4WD capability", "Armored variant", "Multi-role platform"],
-          image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=300&h=200&fit=crop",
-          icon: Truck
-        }
-      ]
+       {
+      "id": 1,
+      "name": "Captain Price",
+      "role": "Task Force 141 Leader",
+      "description": "Veteran SAS officer and leader of Task Force 141. Known for his tactical expertise, iconic mustache, and unwavering loyalty.",
+      "traits": ["Leadership", "Tactical Genius", "Combat Veteran"],
+      "fullDescription": "A legendary SAS operator, John Price has a distinguished career spanning decades. He is a formidable strategist and a master of both covert and overt operations. Price is a key figure in hunting down international threats and is a symbol of resilience and determination in the face of impossible odds.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=400&fit=crop&crop=face",
+      "icon": "Target"
     },
-    'cod-mw2': {
-      characters: [
-        {
-          id: 6,
-          name: "Ghost",
-          role: "Task Force 141 Operative",
-          description: "Elite SAS operative known for his distinctive skull mask and exceptional combat skills in covert operations.",
-          traits: ["Stealth Expert", "Marksman", "Silent Operator"],
-          image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=400&fit=crop&crop=face",
-          icon: Shield
-        }
+    {
+      "id": 2,
+      "name": "Soap MacTavish",
+      "role": "SAS Sergeant",
+      "description": "Scottish SAS sergeant known for his demolitions expertise and quick thinking under pressure.",
+      "traits": ["Demolitions Expert", "Quick Thinking", "Loyal Soldier"],
+      "fullDescription": "John 'Soap' MacTavish is a skilled soldier and a key member of Captain Price's team. His journey from a rookie to a battle-hardened veteran is central to the original Modern Warfare trilogy. Soap is highly proficient in demolitions and close-quarters combat, often at the forefront of the most dangerous missions.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Zap"
+    },
+    {
+      "id": 3,
+      "name": "Ghost",
+      "role": "Task Force 141 Specialist",
+      "description": "A mysterious and highly skilled operator known for his iconic skull mask and proficiency in stealth and psychological warfare.",
+      "traits": ["Stealth Specialist", "Intimidation", "Covert Ops"],
+      "fullDescription": "Simon 'Ghost' Riley is an enigmatic and ruthless Task Force 141 member. His past is shrouded in mystery, and he rarely speaks, letting his actions do the talking. He specializes in covert operations and is an expert at infiltrating enemy territory without a trace, using his presence alone to unnerve his enemies.",
+      "image": "https://images.unsplash.com/photo-1596765279644-8ae92e850b57?w=300&h=400&fit=crop&crop=face",
+      "icon": "Users"
+    },
+    {
+      "id": 4,
+      "name": "Roach",
+      "role": "Task Force 141 Operative",
+      "description": "Silent but deadly Task Force 141 operative specializing in covert operations and stealth missions.",
+      "traits": ["Stealth Operations", "Silent Professional", "Covert Specialist"],
+      "fullDescription": "Gary 'Roach' Sanderson is a highly trained operative who served alongside Soap MacTavish during key moments of the conflict against Makarov. He is the main playable character in a significant portion of Modern Warfare 2, performing critical tasks that push the story forward.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 5,
+      "name": "Yuri",
+      "role": "Ex-Spetsnaz, Loyalist",
+      "description": "A former Spetsnaz turned Russian Loyalist. He has a complicated history with Makarov and becomes a crucial ally to Task Force 141.",
+      "traits": ["Resilience", "Redemption", "Insider Knowledge"],
+      "fullDescription": "Once a member of Makarov's inner circle, Yuri witnessed the horrific consequences of his actions, including the infamous Zakhaev airport massacre. This led him to turn on his former comrade and seek redemption by aiding Price and Soap in their final mission to hunt down Makarov and end his reign of terror.",
+      "image": "https://images.unsplash.com/photo-1629831968132-75d81b31278f?w=300&h=400&fit=crop&crop=face",
+      "icon": "Sword"
+    },
+    {
+      "id": 6,
+      "name": "Corporal Dunn",
+      "role": "Army Ranger Corporal",
+      "description": "Reliable Army Ranger corporal serving under Sergeant Foley in the defense of America.",
+      "traits": ["Reliability", "Team Support", "Combat Ready"],
+      "fullDescription": "James Ramirez's squadmate and a seasoned Army Ranger, Dunn is a pragmatic and loyal soldier. He assists the player character throughout the invasion of the U.S. in Modern Warfare 2, providing crucial support and tactical guidance in intense urban warfare scenarios.",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=face",
+      "icon": "Users"
+    },
+    {
+      "id": 7,
+      "name": "Sergeant Foley",
+      "role": "Army Ranger Sergeant",
+      "description": "Experienced Army Ranger sergeant leading troops through intense urban warfare in Washington D.C.",
+      "traits": ["Urban Combat Expert", "Squad Leader", "Battle-Hardened"],
+      "fullDescription": "Foley is the commanding officer of the Army Ranger squad that Private Ramirez is a part of. He's a decisive leader who navigates his team through the chaotic American invasion, giving clear orders and providing crucial strategic direction during the most challenging firefights.",
+      "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 8,
+      "name": "PFC Allen",
+      "role": "Army Ranger/Undercover Agent",
+      "description": "A U.S. Army Ranger who is handpicked by General Shepherd to go undercover within Makarov's organization.",
+      "traits": ["Undercover", "Special Operations", "Patriotism"],
+      "fullDescription": "Joseph Allen is a playable character at the beginning of Modern Warfare 2. His mission is to infiltrate the Inner Circle of Makarov's ultranationalist group. His dedication to his country leads him to participate in the infamous 'No Russian' mission, which ultimately culminates in his death and sets the stage for the rest of the game's narrative.",
+      "image": "https://images.unsplash.com/photo-1558223637-bfd28a3f820c?w=300&h=400&fit=crop&crop=face",
+      "icon": "Crosshair"
+    },
+    {
+      "id": 9,
+      "name": "Private Ramirez",
+      "role": "Army Ranger Private",
+      "description": "Young but skilled Army Ranger private fighting to defend the homeland against invasion.",
+      "traits": ["Determination", "Quick Learner", "Brave Soldier"],
+      "fullDescription": "James Ramirez is the primary playable character for the American invasion storyline in Modern Warfare 2. He is tasked with defending the country from a Russian invasion, taking part in a number of intense urban battles in iconic American cities.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      "icon": "Star"
+    },
+    {
+      "id": 10,
+      "name": "Makarov",
+      "role": "Ultranaionalist Leader",
+      "description": "The main antagonist of the Modern Warfare trilogy. A cunning and ruthless Russian ultranationalist and terrorist.",
+      "traits": ["Terrorist", "Ruthless", "Mastermind"],
+      "fullDescription": "Vladimir Makarov is one of the most infamous antagonists in gaming history. He is a fanatical ultranationalist driven by a desire for global chaos. His actions are the catalyst for multiple wars, and he is directly responsible for some of the most shocking events in the series, making him the ultimate target for Task Force 141.",
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "icon": "Crown"
+    },
+    {
+      "id": 11,
+      "name": "Nikolai",
+      "role": "Russian Informant/Pilot",
+      "description": "A trustworthy Russian informant and ally to the SAS and Task Force 141, often acting as a pilot and logistic expert.",
+      "traits": ["Loyal Ally", "Skilled Pilot", "Intel Provider"],
+      "fullDescription": "Nikolai is a crucial ally throughout the Modern Warfare trilogy. He provides essential intelligence, transportation, and support to Price's team, often at great personal risk. His network of contacts and expertise in the Russian underworld make him an invaluable asset.",
+      "image": "https://images.unsplash.com/photo-1581403341630-f6c129fe590f?w=300&h=400&fit=crop&crop=face",
+      "icon": "Truck"
+    },
+    {
+      "id": 12,
+      "name": "Kate Laswell",
+      "role": "CIA Station Chief",
+      "description": "A high-ranking CIA officer who acts as the primary liason between the CIA and Task Force 141 in the 2019 Modern Warfare reboot.",
+      "traits": ["Strategic", "Intelligence", "Pragmatic"],
+      "fullDescription": "Kate Laswell is a key intelligence figure in the war on terror. She is responsible for briefing the team, analyzing threats, and coordinating with international partners. She maintains a level-headed demeanor even in the most chaotic situations, providing critical guidance from behind the scenes.",
+      "image": "https://images.unsplash.com/photo-1557862921-37829c790f95?w=300&h=400&fit=crop&crop=face",
+      "icon": "Heart"
+    },
+    {
+      "id": 13,
+      "name": "Farah Karim",
+      "role": "Urzikstani Freedom Fighter",
+      "description": "Leader of the Urzikstani Liberation Force and a determined freedom fighter against Russian occupation.",
+      "traits": ["Leadership", "Resilient", "Strategic"],
+      "fullDescription": "Farah is a fierce and capable leader who has been fighting for her country since she was a child. Her personal history and dedication to liberating Urzikstan are central to the story of the Modern Warfare reboot. She is a master tactician and an expert in guerrilla warfare.",
+      "image": "https://images.unsplash.com/photo-1627992797746-b6058097d748?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 14,
+      "name": "Alex",
+      "role": "CIA SAD Officer",
+      "description": "A field operative for the CIA Special Activities Division, working closely with Farah and her forces.",
+      "traits": ["Undercover", "Special Ops", "Loyal"],
+      "fullDescription": "Alex is a highly trained operative who is sent to Urzikstan to aid Farah in her fight against a global threat. He is a pragmatic and resourceful soldier who forms a strong bond with Farah and her cause. His dedication leads him to make great sacrifices to protect his allies and complete the mission.",
+      "image": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop&crop=face",
+      "icon": "Star"
+    },
+    {
+      "id": 15,
+      "name": "Phillip Graves",
+      "role": "Commander, Shadow Company",
+      "description": "The enigmatic commander of the private military company, Shadow Company. He is a pragmatic leader with a hidden agenda.",
+      "traits": ["Ruthless", "Ambitious", "Strategic"],
+      "fullDescription": "Graves presents himself as an ally to Task Force 141 in their hunt for a new threat. However, his true intentions are revealed, putting him in direct conflict with his former allies. His military expertise and powerful resources make him a formidable adversary.",
+      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Target"
+    },
+    {
+      "id": 16,
+      "name": "Paul Jackson",
+      "role": "U.S. Marine Sergeant",
+      "description": "A U.S. Marine fighting in the Middle East during the initial conflict against Khaled Al-Asad.",
+      "traits": ["Courageous", "Disciplined", "Patriotic"],
+      "fullDescription": "Jackson is a playable character in Modern Warfare (2007) and serves as the eyes of the U.S. Marine Corps campaign. He and his squad are sent to an unnamed Middle Eastern country to hunt down the terrorist leader Al-Asad. His story highlights the intense and dangerous nature of urban warfare.",
+      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 17,
+      "name": "Vasquez",
+      "role": "U.S. Marine Captain",
+      "description": "The commanding officer of Paul Jackson's squad, a no-nonsense and dedicated Marine leader.",
+      "traits": ["Leadership", "Strict", "Experienced"],
+      "fullDescription": "Captain Vasquez is a veteran Marine who leads his troops through the treacherous urban environments of the Middle East. He is a direct and efficient commander focused on completing his mission and protecting his soldiers.",
+      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Star"
+    },
+    {
+      "id": 18,
+      "name": "Kamarov",
+      "role": "Russian Loyalist Officer",
+      "description": "A Russian loyalist officer who initially works with the SAS and later assists Price in the fight against ultranationalists.",
+      "traits": ["Resourceful", "Loyal", "Veteran"],
+      "fullDescription": "Sergeant Kamarov serves as an important point of contact and an ally for Captain Price's team in Russia. He and his men provide ground support and intelligence during key missions, highlighting the alliance between different factions against a common enemy.",
+      "image": "https://images.unsplash.com/photo-1550927407-5bd4b2190f84?w=300&h=400&fit=crop&crop=face",
+      "icon": "Heart"
+    },
+    {
+      "id": 19,
+      "name": "Khaled Al-Asad",
+      "role": "Middle Eastern Insurgent",
+      "description": "A ruthless terrorist leader and a primary antagonist in the first Modern Warfare game.",
+      "traits": ["Terrorist", "Deceptive", "Ruthless"],
+      "fullDescription": "Khaled Al-Asad is a key figure in the terrorist organization allied with Imran Zakhaev. His actions, including the public execution of an innocent president, ignite a conflict that draws the U.S. and its allies into a global war.",
+      "image": "https://images.unsplash.com/photo-1541648232230-c3d386227653?w=300&h=400&fit=crop&crop=face",
+      "icon": "Crown"
+    },
+    {
+      "id": 20,
+      "name": "Griggs",
+      "role": "U.S. Marine Sergeant",
+      "description": "A member of Paul Jackson's squad and a key ally to Price's team. Known for his humor and bravery.",
+      "traits": ["Brave", "Loyal", "Experienced"],
+      "fullDescription": "Sergeant Griggs is a highly capable Marine who survives the initial invasion and becomes an invaluable asset to Captain Price. He provides assistance and comic relief in tense situations, often fighting alongside the player in critical missions.",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Users"
+    },
+    {
+      "id": 21,
+      "name": "Imran Zahkaev",
+      "role": "Russian Ultranationalist",
+      "description": "The fanatical founder of the Russian ultranationalist party, and the main antagonist in the first Modern Warfare game.",
+      "traits": ["Fanatical", "Terrorist", "Vengeful"],
+      "fullDescription": "Zahkaev is a central figure in the original Modern Warfare's plot. His actions, including providing the nuclear detonator to Al-Asad, lead to a massive conflict. He is a master manipulator who orchestrates a global crisis from the shadows, fueled by a desire for a powerful, restored Russia.",
+      "image": "https://images.unsplash.com/photo-1579483321685-649f81216d80?w=300&h=400&fit=crop&crop=face",
+      "icon": "Crown"
+    },
+    {
+      "id": 22,
+      "name": "MacMillan",
+      "role": "SAS Captain",
+      "description": "Experienced SAS captain and Price's former mentor, known for his sniper expertise and tactical knowledge.",
+      "traits": ["Sniper Expert", "Mentor Figure", "Tactical Wisdom"],
+      "fullDescription": "Captain MacMillan is a living legend in the SAS. He serves as Captain Price's mentor during a harrowing mission to assassinate Imran Zahkaev in the past. Despite being injured, he displays incredible resilience and strategic cunning, becoming a key figure in Price's development as a leader.",
+      "image": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop&crop=face",
+      "icon": "Target"
+    },
+    {
+      "id": 23,
+      "name": "Alejandro Vargas",
+      "role": "Mexican Special Forces Colonel",
+      "description": "A charismatic and highly skilled officer of the Mexican Special Forces, working closely with Task Force 141.",
+      "traits": ["Leadership", "Skilled", "Protective"],
+      "fullDescription": "Colonel Vargas leads the 'Los Vaqueros' team and is a primary ally to Ghost and Soap in Modern Warfare II (2022). His intimate knowledge of the region and his tactical expertise are invaluable in the fight against a drug cartel and a major terrorist threat. He is a fiercely loyal and protective leader.",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 24,
+      "name": "Rodolfo 'Rudy' Parra",
+      "role": "Mexican Special Forces Sergeant",
+      "description": "Alejandro Vargas's second-in-command and a vital member of the Los Vaqueros team.",
+      "traits": ["Supportive", "Loyal", "Stealthy"],
+      "fullDescription": "Sergeant Rudy Parra is a loyal and capable second-in-command to Colonel Vargas. He provides crucial support to both Los Vaqueros and Task Force 141, often assisting with reconnaissance and flanking maneuvers. His unwavering dedication makes him a trustworthy ally.",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=face",
+      "icon": "Users"
+    },
+    {
+      "id": 25,
+      "name": "Frost",
+      "role": "Delta Force Operator",
+      "description": "A skilled Delta Force operative and the main playable character in the Delta Force campaign in Modern Warfare 3.",
+      "traits": ["Precision", "Stealth", "Endurance"],
+      "fullDescription": "Sgt. First Class Derek 'Frost' Westbrook is a member of Delta Force's Team Metal, a key component in the fight against the Russian invasion. He is highly proficient in both covert and direct action, often leading the charge in some of the game's most pivotal battles, from New York to Paris.",
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "icon": "Crosshair"
+    },
+    {
+      "id": 26,
+      "name": "Sandman",
+      "role": "Delta Force Team Leader",
+      "description": "The leader of Delta Force's elite Team Metal, and a key ally to Price and Soap in Modern Warfare 3.",
+      "traits": ["Leadership", "Tactical", "Special Ops"],
+      "fullDescription": "Master Sergeant Sandman is a respected and highly capable leader. He commands Team Metal with authority and precision, working in tandem with Task Force 141 to stop the escalating global conflict. His team's expertise in urban warfare is crucial to the success of the allied forces.",
+      "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=400&fit=crop&crop=face",
+      "icon": "Shield"
+    },
+    {
+      "id": 27,
+      "name": "Grinch",
+      "role": "Delta Force Operator",
+      "description": "A member of Delta Force's Team Metal, known for his calm and collected demeanor in combat.",
+      "traits": ["Steady Hand", "Marksman", "Supportive"],
+      "fullDescription": "Sgt. First Class Marcus 'Grinch' Burns is a key member of Sandman's team. He provides crucial overwatch and fire support during a variety of missions, from the assault on Hamburg to the defense of Paris. His calm under pressure makes him an invaluable part of the squad.",
+      "image": "https://images.unsplash.com/photo-1627992797746-b6058097d748?w=300&h=400&fit=crop&crop=face",
+      "icon": "Target"
+    },
+    {
+      "id": 28,
+      "name": "Truck",
+      "role": "Delta Force Operator",
+      "description": "A heavy-duty Delta Force operator known for his strength and direct approach to combat.",
+      "traits": ["Heavy Hitter", "Resilient", "Frontline Fighter"],
+      "fullDescription": "Sgt. First Class Truck is the third member of Team Metal, often leading the assault with heavy weaponry. His rugged build and direct approach make him a formidable force in any engagement. He is a reliable teammate and is always ready for a direct fight.",
+      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "icon": "Truck"
+    },
+    {
+      "id": 29,
+      "name": "Overlord",
+      "role": "Delta Force Command",
+      "description": "The tactical commander who provides mission-critical intel and support to Team Metal from the air.",
+      "traits": ["Intelligence", "Tactical", "Supportive"],
+      "fullDescription": "Overlord is the voice of command for Team Metal. He is the person behind the scenes, providing aerial reconnaissance, intel, and tactical advice to the operators on the ground. His strategic guidance is essential for the team's success in high-stakes environments.",
+      "image": "https://images.unsplash.com/photo-1557862921-37829c790f95?w=300&h=400&fit=crop&crop=face",
+      "icon": "Users"
+    },
       ],
       weapons: [
         {
@@ -192,6 +385,8 @@ export const gameData = {
         }
       ]
     },
+
+
             // ASSASSIN CREED SECTION
         'ac-series': {
         characters: [
@@ -366,7 +561,7 @@ export const gameData = {
             "role": "Assassin",
             "description": "The central protagonist of Assassin's Creed II, who becomes a legendary Assassin after his family's betrayal.",
             "fullDescription": "Ezio Auditore da Firenze was born into nobility but became an Assassin after his family's betrayal and execution. His journey spans decades, from a revenge-driven youth to a wise and charismatic mentor. He dismantled the Templar Order across Italy, forged alliances with historical figures like Leonardo da Vinci, and helped shape the future of the Brotherhood for generations.",
-            "traits": ["Charismatic", "Vengeful", "Strategic"],
+            "traits": ["Charismatic", "Arrogant", "master of rizz", "Vengeful", "Strategic","leader",],
             "game": "Assassin's Creed II",
             "icon": "Sword",
             "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/449BBgnc3Q1ha2IN9rh3bR/eb9a6d17615e1480d12e9aab24804c67/ac-ezio-hero-mobile.jpg"
@@ -627,14 +822,14 @@ export const gameData = {
         
             ],
             //PIECES OF EDEN 
-            POE: [
+            weapons: [
             {
             "id": 1,
             "name": "Apple of Eden",
             "type": "Orb",
             "description": "The most iconic Piece of Eden. A spherical artifact that can manipulate minds, create illusions, and project energy.",
             "fullDescription": "The Apple of Eden is a powerful relic created by the Isu to control humanity. Its primary function is to manipulate the minds of a large group of people, making them see illusions and compelling them to obey the user's will. Many Apples have been used to create political movements, establish empires, and instigate wars. Altaïr used one to rebuild the Assassin Brotherhood, and Ezio fought to keep one out of the hands of the Borgias.",
-            "image": "https://images.alphacoders.com/694/694467.jpg",
+            "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/assassins-creed-3/a/a6/Apple-of-Eden.jpg",
             "specs": ["Mind Control", "Illusions", "Energy Blasts"],
             "game": "Assassin's Creed (Multiple)",
             "icon": "Apple"
@@ -645,7 +840,7 @@ export const gameData = {
             "type": "Blade",
             "description": "A powerful sword that grants its wielder incredible charisma, combat prowess, and the ability to project energy blasts.",
             "fullDescription": "The Sword of Eden is a legendary Isu artifact disguised as a blade. It enhances the wielder's charisma, making them an inspirational leader capable of commanding armies. It also amplifies physical strength and agility, and can be used to fire powerful energy blasts. These swords have been wielded by historical figures like King Arthur (as Excalibur) and Jeanne d'Arc. In Assassin's Creed Unity, one was used by the Templar François-Thomas Germain and later by the Assassin Arno Dorian.",
-            "image": "https://i.pinimg.com/originals/9f/c7/a9/9fc7a9e0a0a501e40c5f2b31f7c3c267.jpg",
+            "image": "https://fbi.cults3d.com/uploaders/17428531/illustration-file/ea92def9-8434-4678-9cc1-380df9a5019b/untitled-5.png",
             "specs": ["Enhanced Charisma", "Combat Augmentation", "Energy Projection"],
             "icon": "Sword"
             },
@@ -655,7 +850,7 @@ export const gameData = {
             "type": "Staff/Scepter",
             "description": "A staff that can amplify the power of an Apple of Eden, control minds, and even grant a form of immortality.",
             "fullDescription": "The Staff of Eden, also known as the Papal Staff or Staff of Hermes, is a versatile Isu artifact. It can be used as a weapon, a key, and a conduit for immense power. In Assassin's Creed II, Rodrigo Borgia used the Papal Staff to amplify the power of his Apple of Eden. In Assassin's Creed Odyssey, the Staff of Hermes was a central plot device, granting the wielder, Kassandra, a form of biological immortality and a connection to the Isu network.",
-            "image": "https://i.pinimg.com/originals/b5/d2/8c/b5d28cb617c469b4c0e62031a0845a70.jpg",
+            "image": "https://static.wikia.nocookie.net/ipdkverse/images/a/a4/Papal_Staff_of_Eden.png/revision/latest?cb=20180624225412",
             "specs": ["Amplification", "Mind Control", "Immortality"],
             "icon": "Crosshair"
             },

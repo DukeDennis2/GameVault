@@ -7,6 +7,8 @@ import {
 
 import { games } from '../data/games'; // adjust path as needed
 import { gameData } from '../data/games'; // adjust path as needed
+import CharacterProfile from './CharacterProfile'; // Import the new component
+
 
 
 const GamePortal = () => {
@@ -15,12 +17,31 @@ const GamePortal = () => {
   const [isVisible, setIsVisible] = useState({});
   const [selectedSubGame, setSelectedSubGame] = useState(null); 
   const [expandedItemId, setExpandedItemId] = useState(null);
-
+  const [showProfile, setShowProfile] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
   
+const iconMapping = {
+    Sword: Sword,
+    Apple: Apple,
+    Gamepad2: Gamepad2,
+    Shield: Shield,
+    Crown: Crown,
+    Zap: Zap,
+    Heart: Heart,
+    Users: Users,
+    ArrowLeft: ArrowLeft,
+    Truck: Truck,
+    Crosshair: Crosshair,
+    ShieldCheck: ShieldCheck,
+    Car: Car,
+    Home: Home,
+    Star: Star,
+    Target: Target,
+  };
 
   const categoryIcons = {
     characters: Users,
-    weapons: Crosshair,
+    weapons: Apple,
     armor: ShieldCheck,
     vehicles: Car,
     locations: Crown
@@ -168,150 +189,187 @@ const GamePage = () => {
   const game = games.find(g => g.id === currentPage);
   const currentData = gameData[currentPage]?.[selectedCategory] || [];
   const availableCategories = game?.categories || [];
+  const isCharacter = selectedCategory === 'characters';
+
+   // New section to hold category summaries
+    const categorySummaries = {
+      characters: {
+        title: "Meet the Heroes & Villains",
+        description: "Dive into the bios of the iconic figures who shape this universe, from legendary protagonists to notorious antagonists."
+      },
+      weapons: {
+        title: "Arsenal and Equipment",
+        description: "Explore the vast collection of weapons, from classic firearms to futuristic blasters and specialized gear."
+      },
+      vehicles: {
+        title: "Vehicles of War",
+        description: "Discover the powerful machines that dominate the battlefield, including tanks, jets, and starships."
+      },
+      armor: {
+        title: "Protective Gear",
+        description: "Examine the various types of armor and protective suits worn by heroes and villains throughout the series."
+      },
+      locations: {
+        title: "Iconic Locations",
+        description: "Journey to the legendary cities, battlefields, and hidden sanctuaries that define this world."
+      }
+    };
+
+    const currentSummary = categorySummaries[selectedCategory] || { title: "", description: "" };
+
+    const handleItemClick = (item) => {
+      setSelectedItem(item);
+      setShowProfile(true);
+    };
+
+    const handleBackToGrid = () => {
+      setSelectedItem(null);
+      setShowProfile(false);
+    };
+
+    // Conditional rendering: Show character profile if 'showProfile' is true
+    if (showProfile && selectedItem && isCharacter) {
+      return <CharacterProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+    }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white">
-      {/* Header */}
-      <div className={`relative bg-gradient-to-r ${game?.gradient} py-16`}>
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative container mx-auto px-6">
-          <button
-            onClick={() => setCurrentPage('home')}
-            className="flex items-center gap-2 mb-8 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
-          >
-            <ArrowLeft className="h-5 w-5" />
-            <Home className="h-5 w-5" />
-            <span>Back to Portal</span>
-          </button>
-          
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-4 text-white">
-              {game?.name}
-            </h1>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              {game?.description}
-            </p>
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white">
+        {/* Header (existing) */}
+        <div className={`relative bg-gradient-to-r ${game?.gradient} py-16`}>
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="relative container mx-auto px-6">
+            <button
+              onClick={() => setCurrentPage('home')}
+              className="flex items-center gap-2 mb-8 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-colors"
+            >
+              <ArrowLeft className="h-5 w-5" />
+              <Home className="h-5 w-5" />
+              <span>Back to Portal</span>
+            </button>
+            
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-4 text-white">
+                {game?.name}
+              </h1>
+              <p className="text-xl text-white/80 max-w-2xl mx-auto">
+                {game?.description}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* CATEGORY Navigation */}
-      <div className="container mx-auto px-6 py-8">
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {availableCategories.map((category) => {
-            const IconComponent = categoryIcons[category];
-            return (
-              <button
-                key={category}
-                onClick={() => {
-                  setSelectedCategory(category);
-                  resetVisibility();
-                }}
-                className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 capitalize ${
-                  selectedCategory === category
-                    ? `bg-gradient-to-r ${game?.gradient} shadow-lg`
-                    : 'bg-slate-700/50 hover:bg-slate-600/50'
-                }`}
-              >
-                <IconComponent className="h-5 w-5" />
-                <span className="font-medium">{category}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {/* CONTENT Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {currentData.map((item) => {
-            const IconComponent = categoryIcons[selectedCategory]; // Use categoryIcons to get the component
-            const isCharacter = selectedCategory === 'characters';
-            
-            return (
-              <div
-                key={item.id}
-                className={`group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 ${
-                  isVisible[item.id] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
-              >
-                {/* IMAGE */}
-                <div className={`relative ${isCharacter ? 'h-64' : 'h-48'} overflow-hidden`}>
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${game?.gradient} opacity-10`}></div>
-                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-2">
-                    <IconComponent className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-2xl font-bold text-white mb-1">
-                      {item.name}
-                    </h3>
-                    <p className="text-white/80 text-sm font-medium">
-                      {item.role || item.type}
-                    </p>
-                  </div>
-                </div>
-
-                {/* CONTENT */}
-                <div className="p-6">
-                  {/* Description + Explore Button */}
-                  <div className="mb-6">
-                    {expandedItemId === item.id ? (
-                      <p className="text-sm font-semibold text-white leading-relaxed">
-                        {item.fullDescription || item.description}
+        <div className="container mx-auto px-6 py-8">
+          {/* Category Navigation (existing) */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {availableCategories.map((category) => {
+              const IconComponent = categoryIcons[category];
+              return (
+                <button
+                  key={category}
+                  onClick={() => {
+                    setSelectedCategory(category);
+                    resetVisibility();
+                  }}
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 capitalize ${
+                    selectedCategory === category
+                      ? `bg-gradient-to-r ${game?.gradient} shadow-lg`
+                      : 'bg-slate-700/50 hover:bg-slate-600/50'
+                  }`}
+                >
+                  <IconComponent className="h-5 w-5" />
+                  <span className="font-medium">{category}</span>
+                </button>
+              );
+            })}
+          </div>
+          
+          {/* Summary Section (existing) */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+              {currentSummary.title}
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              {currentSummary.description}
+            </p>
+          </div>
+          
+          {/* Content Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {currentData.map((item) => {
+              const IconComponent = categoryIcons[selectedCategory];
+              
+              return (
+                <div
+                  key={item.id}
+                  className={`group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer ${
+                    isVisible[item.id] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                  }`}
+                  onClick={() => isCharacter ? handleItemClick(item) : null} // Conditionally handle click
+                >
+                  {/* IMAGE */}
+                  <div className={`relative ${isCharacter ? 'h-64' : 'h-48'} overflow-hidden`}>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t ${game?.gradient} opacity-10`}></div>
+                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full p-2">
+                      <IconComponent className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="absolute bottom-4 left-4">
+                      <h3 className="text-2xl font-bold text-white mb-1">
+                        {item.name}
+                      </h3>
+                      <p className="text-white/80 text-sm font-medium">
+                        {item.role || item.type}
                       </p>
-                    ) : (
+                    </div>
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="p-6">
+                    {/* Description + Explore Button (removed from here) */}
+                    <div className="mb-6">
                       <p className="text-sm font-[150] text-slate-300 leading-relaxed">
                         {item.description}
                       </p>
-                    )}
-                    <button
-                      onClick={() =>
-                        setExpandedItemId(expandedItemId === item.id ? null : item.id)
-                      }
-                      className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-full transition-all"
-                    >
-                      {expandedItemId === item.id ? 'Collapse' : 'Explore'}
-                    </button>
-                  </div>
+                    </div>
 
-                  {/* TRAITS/Specs */}
-                  <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-slate-200 uppercase tracking-wide">
-                      {isCharacter ? 'Key Abilities' : 'Specifications'}
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {(item.traits || item.specs || []).map((spec, specIndex) => (
-                        <span
-                          key={specIndex}
-                          className={`px-3 py-1 bg-gradient-to-r ${game?.gradient} text-white text-xs rounded-full shadow-md`}
-                        >
-                          {spec}
-                        </span>
-                      ))}
+                    {/* TRAITS/Specs */}
+                    <div className="space-y-3">
+                      <h4 className="text-sm font-semibold text-slate-200 uppercase tracking-wide">
+                        {isCharacter ? 'Key Abilities' : 'Specifications'}
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {(item.traits || item.specs || []).map((spec, specIndex) => (
+                          <span
+                            key={specIndex}
+                            className={`px-3 py-1 bg-gradient-to-r ${game?.gradient} text-white text-xs rounded-full shadow-md`}
+                          >
+                            {spec}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Empty State */}
-        {currentData.length === 0 && (
-          <div className="text-center py-20">
-            <Star className="mx-auto h-16 w-16 text-slate-600 mb-4" />
-            <h3 className="text-2xl font-bold text-slate-400 mb-2">Coming Soon</h3>
-            <p className="text-slate-500">This category is being developed for {game?.name}</p>
+              );
+            })}
           </div>
-        )}
-      </div>
-    </div>
-  );
-};
 
+          {/* Empty State (existing) */}
+          {currentData.length === 0 && (
+            <div className="text-center py-20">
+              <Star className="mx-auto h-16 w-16 text-slate-600 mb-4" />
+              <h3 className="text-2xl font-bold text-slate-400 mb-2">Coming Soon</h3>
+              <p className="text-slate-500">This category is being developed for {game?.name}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
 
   return currentPage === 'home' ? <HomePage /> : <GamePage />;
 };
