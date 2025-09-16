@@ -212,7 +212,7 @@ const GamePage = () => {
       },
       groups: { // <-- Changed 'armor' to 'groups'
         title: "Factions and Organizations",
-        description: "Uncover the secrets of the major factions, from the noble Assassins to the ruthless Templars, the ancient Jedi, and powerful military corporations."
+        description: "Uncover the secrets of the major factions, from the ancient Assassins to the ruthless Templars, mythical armies, the ancient Jedis and siths and advanced military branches."
       },
       locations: {
         title: "Iconic Locations",

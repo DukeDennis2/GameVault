@@ -90,7 +90,7 @@ export const gameData = {
       "description": "Veteran SAS officer and leader of Task Force 141. Known for his tactical expertise, iconic mustache, and unwavering loyalty.",
       "traits": ["Leadership", "Tactical Genius", "Combat Veteran"],
       "fullDescription": "A legendary SAS operator, John Price has a distinguished career spanning decades. He is a formidable strategist and a master of both covert and overt operations. Price is a key figure in hunting down international threats and is a symbol of resilience and determination in the face of impossible odds.",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/originals/2d/05/ee/2d05eeea4f91f09b301049f29f5223ea.jpg",
       "icon": "Target"
     },
     {
@@ -100,7 +100,7 @@ export const gameData = {
       "description": "Scottish SAS sergeant known for his demolitions expertise and quick thinking under pressure.",
       "traits": ["Demolitions Expert", "Quick Thinking", "Loyal Soldier"],
       "fullDescription": "John 'Soap' MacTavish is a skilled soldier and a key member of Captain Price's team. His journey from a rookie to a battle-hardened veteran is central to the original Modern Warfare trilogy. Soap is highly proficient in demolitions and close-quarters combat, often at the forefront of the most dangerous missions.",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/18/be/12/18be125ad8bbe63a0c2d79027a3cbab8.jpg",
       "icon": "Zap"
     },
     {
@@ -110,7 +110,7 @@ export const gameData = {
       "description": "A mysterious and highly skilled operator known for his iconic skull mask and proficiency in stealth and psychological warfare.",
       "traits": ["Stealth Specialist", "Intimidation", "Covert Ops"],
       "fullDescription": "Simon 'Ghost' Riley is an enigmatic and ruthless Task Force 141 member. His past is shrouded in mystery, and he rarely speaks, letting his actions do the talking. He specializes in covert operations and is an expert at infiltrating enemy territory without a trace, using his presence alone to unnerve his enemies.",
-      "image": "https://images.unsplash.com/photo-1596765279644-8ae92e850b57?w=300&h=400&fit=crop&crop=face",
+      "image": "https://preview.redd.it/add-this-ghost-skin-v0-bfabkan9vl3c1.jpg?width=640&crop=smart&auto=webp&s=3e8a359b0d22e778b849898a2091b17a9c4502a1",
       "icon": "Users"
     },
     {
@@ -482,7 +482,7 @@ export const gameData = {
                 {
               "id": 1,
               "name": "Altaïr Ibn-La'Ahad",
-              "role": "Master Assassin",
+              "role": "Master Assassin / Mentor",
               "description": "The central protagonist of Assassin's Creed I, tasked with eliminating nine corrupt figures during the Third Crusade.",
               "fullDescription": "Born into the Assassin Brotherhood, Altaïr was a prodigy, achieving the rank of Master Assassin at a young age. His arrogance led to a failed mission, stripping him of his rank. His quest to assassinate nine targets was his path to redemption, during which he uncovered a deeper Templar conspiracy and the betrayal of his mentor. He eventually took over as Mentor of the Brotherhood, reforming its tenets and safeguarding its future for generations.",
               "traits": [
@@ -501,7 +501,7 @@ export const gameData = {
           {
               "id": 2,
               "name": "Malik Al-Sayf",
-              "role": "Assassin Bureau Leader",
+              "role": "Assassin / Assassin Bureau Leader",
               "description": "Altaïr’s rival turned ally, leader of the Jerusalem bureau and a loyal follower of the Creed despite losing his arm and brother.",
               "fullDescription": "Malik was an accomplished Assassin and the leader of the Jerusalem Bureau. He held a deep rivalry with Altaïr due to his overconfidence, which led to the death of Malik's brother, Kadar. Despite his resentment, Malik became a crucial ally and close friend to Altaïr, offering him counsel and support after the events of the game. He proved his unwavering loyalty to the Brotherhood and became an integral part of Altaïr's reforms.",
               "traits": [
@@ -520,7 +520,7 @@ export const gameData = {
           {
               "id": 3,
               "name": "Maria Thorpe",
-              "role": "Templar Turned Assassin",
+              "role": "Former Templar Agent / Assassin",
               "description": "Originally a Templar agent sent to kill Altaïr, Maria eventually joined the Assassins and became his wife.",
               "fullDescription": "A formidable English noblewoman and Templar agent, Maria initially served as a decoy for Robert de Sablé. After being defeated by Altaïr, she was spared and traveled with him, eventually coming to question her Templar beliefs. She renounced the Templars to join the Assassins, becoming Altaïr's wife and the mother of his children. She was a key figure in the development of the Assassins' legacy alongside Altaïr.",
               "traits": [
@@ -557,7 +557,7 @@ export const gameData = {
           {
               "id": 5,
               "name": "Al Mualim",
-              "role": "Mentor / Final Target",
+              "role": "Mentor of Masyaf's Assassins / Final Target",
               "description": "Altaïr's mentor and secret Templar, revealed to be the mastermind behind the corruption.",
               "fullDescription": "Al Mualim was the revered Mentor of the Assassin Brotherhood, who trained Altaïr from a young age. His wisdom and guidance were legendary, but he secretly harbored a desire for power and control. He was revealed to be a Templar Grand Master who used the Apple of Eden to manipulate the region and the Assassin Brotherhood itself. His ultimate goal was to establish a false peace through absolute control, leading to a final confrontation with Altaïr.",
               "traits": [
@@ -760,7 +760,7 @@ export const gameData = {
           {
               "id": 1,
               "name": "Ezio Auditore",
-              "role": "Assassin",
+              "role": "Master Assassin + Mentor",
               "description": "The central protagonist of Assassin's Creed II, who becomes a legendary Assassin after his family's betrayal.",
               "fullDescription": "Ezio Auditore da Firenze was born into nobility but became an Assassin after his family's betrayal and execution. His journey spans decades, from a revenge-driven youth to a wise and charismatic mentor. He dismantled the Templar Order across Italy, forged alliances with historical figures like Leonardo da Vinci, and helped shape the future of the Brotherhood for generations.",
               "traits": [
@@ -779,7 +779,7 @@ export const gameData = {
           {
               "id": 2,
               "name": "Giovanni Auditore",
-              "role": "Assassin",
+              "role": "Assassin / Ally",
               "description": "Ezio’s father, a respected member of the Brotherhood, executed by corrupt officials.",
               "fullDescription": "Giovanni Auditore was a respected nobleman and a Master Assassin in Florence. He was a devoted family man who kept his true identity a secret from his children until his final days. His execution by the Templar-aligned Pazzi family was the catalyst for Ezio's transformation into an Assassin. Giovanni left behind crucial clues and documents that guided Ezio on his path to revenge.",
               "traits": [
@@ -793,7 +793,7 @@ export const gameData = {
               ],
               "game": "Assassin's Creed II",
               "icon": "Shield",
-              "image": "https://www.giantbomb.com/a/uploads/scale_medium/3/34651/1230110_0gio2.jpg"
+              "image": "https://64.media.tumblr.com/1afd9ff4074aa0096fc3bae2f5df970a/4f59d6fb55239e98-55/s400x600/9f52f0bbd4db1a987ebe57aaa620c99838fdb52d.jpg"
           },
           {
               "id": 3,
@@ -817,7 +817,7 @@ export const gameData = {
           {
               "id": 4,
               "name": "Federico Auditore",
-              "role": "Assassin",
+              "role": "Ally",
               "description": "Ezio’s older brother, playful and protective, executed alongside Giovanni.",
               "fullDescription": "Federico was Ezio's charismatic and protective older brother. He was a fellow Assassin and often accompanied Ezio on their playful rooftop races. His close bond with Ezio made his execution, alongside his father and younger brother, a devastating event for the family. His death fueled Ezio's initial quest for vengeance.",
               "traits": [
@@ -854,7 +854,7 @@ export const gameData = {
           {
               "id": 6,
               "name": "Claudia Auditore",
-              "role": "Ally",
+              "role": "Ally / Assassin",
               "description": "Ezio’s sister, who grows into a strong leader and manages the Monteriggioni estate.",
               "fullDescription": "Claudia was Ezio's sister, who started as a carefree young noblewoman. After her family's downfall, she grew into a resilient and capable leader. She took on the management of the Auditore villa in Monteriggioni, handling its finances and renovations. Her administrative skills were a vital contribution to the Assassins' cause, and she later joined the Brotherhood herself.",
               "traits": [
@@ -873,7 +873,7 @@ export const gameData = {
           {
               "id": 7,
               "name": "Mario Auditore",
-              "role": "Assassin",
+              "role": "ALly",
               "description": "Ezio’s uncle and mentor, leader of the Monteriggioni Assassins.",
               "fullDescription": "Mario Auditore was the bold and charismatic uncle of Ezio and the leader of the Monteriggioni Assassins. He took Ezio under his wing, teaching him the ways of the Brotherhood and providing him with a home at the Auditore villa. His leadership and military experience were crucial in the fight against the Templars, and he served as a strong father figure to Ezio.",
               "traits": [
@@ -892,7 +892,7 @@ export const gameData = {
           {
               "id": 8,
               "name": "Caterina Sforza",
-              "role": "Ally",
+              "role": "Ally / Ruler of Forli",
               "description": "A powerful noblewoman and ally of the Assassins, known for her defiance and leadership.",
               "fullDescription": "Caterina Sforza was a powerful and defiant noblewoman who ruled the city of Forlì. She was a fearless leader who refused to bow to the Templars and became a valuable ally to Ezio. Her cunning and tactical mind were instrumental in protecting her city and helping the Assassins in their fight against the Borgia family.",
               "traits": [
@@ -911,7 +911,7 @@ export const gameData = {
           {
               "id": 9,
               "name": "Rodrigo Borgia",
-              "role": "Templar",
+              "role": "Templar / Pope",
               "description": "Grand Master of the Templars and Ezio’s ultimate adversary.",
               "fullDescription": "Rodrigo Borgia was the cunning and ruthless Grand Master of the Templar Order in Italy. He was a master manipulator who used his political power and influence to become the Pope. He was the main antagonist of the game and the one who orchestrated the execution of Ezio's family. His ultimate goal was to acquire the Apple of Eden to establish a new world order under his control.",
               "traits": [
@@ -927,6 +927,40 @@ export const gameData = {
               "icon": "Templar",
               "image": "https://assets.mycast.io/actor_images/actor-rodrigo-borgia-assassin-s-creed-128589_large.jpg?1600945022"
           },
+          {
+        "id": 10,
+        "name": "Cesare Borgia",
+        "role": "Templar / General of the Papal Army",
+        "description": "The ruthless and arrogant son of Rodrigo Borgia, who serves as the main military leader for the Templars in Rome.",
+        "fullDescription": "Cesare Borgia is the chief antagonist of Assassin's Creed: Brotherhood. As the son of Rodrigo Borgia, he is a brilliant but brutal military commander who spearheads the Templar campaign to conquer Italy. He possesses an unquenchable thirst for power and respects no one, including his own family. His ambition and cruelty make him Ezio's most direct and dangerous adversary, and the two clash repeatedly as Ezio works to liberate Rome from the Borgia's grip.",
+        "traits": [
+            "Brutal",
+            "Ambitious",
+            "Charismatic",
+            "Arrogant",
+            "Ruthless"
+        ],
+        "game": "Assassin's Creed: Brotherhood",
+        "icon": "Templar",
+        "image": "https://preview.redd.it/cesare-borgia-from-assassins-creed-brotherhood-request-v0-1fcgaip2qxga1.jpg?width=640&crop=smart&auto=webp&s=04170634f3f0e8f3e6ee6a35eea35209e7f9d968"
+        },
+        {
+            "id": 11,
+            "name": "Lucrezia Borgia",
+            "role": "Templar Ally",
+            "description": "The sister of Cesare and daughter of Rodrigo, a powerful political figure within the Borgia family.",
+            "fullDescription": "Lucrezia Borgia is a complex figure in Assassin's Creed: Brotherhood. As the daughter of the Pope and sister to Cesare, she is an influential ally to the Templars and wields significant power within the Vatican. Despite her role in her family's schemes, her relationship with them is fraught with manipulation and a deep sense of a personal tragedy. Ezio encounters her several times and is a key witness to the dysfunction that ultimately contributes to the Borgia's downfall.",
+            "traits": [
+                "Influential",
+                "Manipulative",
+                "Tragic",
+                "Political",
+                "Scheming"
+            ],
+            "game": "Assassin's Creed: Brotherhood",
+            "icon": "Templar",
+            "image": "https://i.namu.wiki/i/4sbCipkzUwGJk9l1Sn6P-NtHX4GVhHOZPOpamvl33BHCTRBrfgVykO6xEVqThpIU2pNn-2OYkt2W6eidSuQu9A.webp"
+        },
           {
               "id": 10,
               "name": "Vieri de' Pazzi",
@@ -986,7 +1020,7 @@ export const gameData = {
           {
               "id": 13,
               "name": "Lorenzo de' Medici",
-              "role": "Ally",
+              "role": "Ally / Ruler of Florence",
               "description": "Ruler of Florence and supporter of the Assassins, targeted by the Pazzi conspiracy.",
               "fullDescription": "Lorenzo de' Medici was the powerful and respected ruler of Florence. He was a patron of the arts and a staunch supporter of the Assassins, who helped him fight against the Templar conspiracy. His diplomatic and strategic mind was a crucial asset in the struggle for control of Florence.",
               "traits": [
@@ -1061,7 +1095,7 @@ export const gameData = {
           {
               "id": 48,
               "name": "Girolamo Savonarola",
-              "role": "Dominican Friar & Reformer",
+              "role": "Dominican Friar / Reformer",
               "description": "A fiery preacher who led Florence through a radical religious transformation during the late 15th century.",
               "fullDescription": "Born in Ferrara in 1452, Savonarola rose to prominence in Florence with apocalyptic sermons condemning corruption, secular art, and moral decay. After the fall of the Medici in 1494, he helped establish a theocratic republic, declaring Florence the 'New Jerusalem'. His infamous 'Bonfire of the Vanities' symbolized his campaign for spiritual renewal. Defying Pope Alexander VI, Savonarola was excommunicated, arrested, and executed in 1498. His legacy lived on through the Piagnoni movement and inspired early Protestant reformers.",
               "traits": [
@@ -1080,7 +1114,7 @@ export const gameData = {
           {
               "id": 21,
               "name": "Leonardo da Vinci",
-              "role": "Ally",
+              "role": "Ally / anatomist / sculptor /cartographer /painter / botanist / engineer / architect / mathematician",
               "description": "Inventor and close friend to Ezio, helps decode codex pages and upgrade weapons.",
               "fullDescription": "Leonardo da Vinci was a genius inventor, artist, and close friend to Ezio. He was a key ally to the Assassins, helping Ezio by decoding his father's codex pages and upgrading his weapons. His brilliant mind and inventions were instrumental in Ezio's success.",
               "traits": [
@@ -1099,7 +1133,7 @@ export const gameData = {
           {
               "id": 23,
               "name": "Antonio de Magianis",
-              "role": "Ally",
+              "role": "Ally / Leader of the Thieves of Venice",
               "description": "Leader of the Venetian thieves and a key ally to Ezio in Venice.",
               "fullDescription": "Antonio de Magianis was the resourceful and streetwise leader of the Venetian thieves. He was a loyal ally to Ezio in Venice, providing him with vital intel and support against the Templars. His network of thieves and his knowledge of the city's rooftops were invaluable to the Assassins' cause.",
               "traits": [
@@ -1137,7 +1171,7 @@ export const gameData = {
           {
               "id": 25,
               "name": "Bartolomeo d'Alviano",
-              "role": "Ally",
+              "role": "Ally / Conditierro",
               "description": "Mercenary captain who aids Ezio in Venice and later in Rome.",
               "fullDescription": "Bartolomeo d'Alviano was a bold and loyal mercenary captain who became a valuable ally to Ezio. He aided the Assassins in their fight against the Templars in Venice and later in Rome. His military prowess and fierce loyalty were a great asset to the Brotherhood.",
               "traits": [
@@ -1175,7 +1209,7 @@ export const gameData = {
                 {
               "id": 27,
               "name": "La Volpe",
-              "role": "Assassin",
+              "role": "Assassin / Leader of the Thieves of Florence and Rome ",
               "description": "Mysterious leader of the Florentine thieves' guild. Known for his stealth and intelligence, he aids Ezio in uncovering conspiracies.",
               "fullDescription": "La Volpe was the elusive and streetwise leader of the Florentine thieves' guild. He was a high-ranking Assassin who initially distrusted Ezio but eventually became a loyal ally. His knowledge of the city's hidden passages and his network of informants were invaluable to Ezio in his fight against the Templars.",
               "traits": [
@@ -1194,7 +1228,7 @@ export const gameData = {
           {
               "id": 28,
               "name": "Niccolò Machiavelli",
-              "role": "Assassin",
+              "role": "Assassin / Philosopher",
               "description": "Florentine philosopher and strategist. A high-ranking Assassin who helps Ezio dismantle the Borgia and Savonarola's influence.",
               "fullDescription": "Niccolò Machiavelli was a real-life Florentine philosopher and diplomat, portrayed as a high-ranking Assassin in the game. He was a strategic and rational figure who provided Ezio with political and tactical advice. He was instrumental in helping Ezio dismantle the Borgia and Savonarola's influence in Florence, and he served as a key figure in the Assassin Brotherhood.",
               "traits": [
