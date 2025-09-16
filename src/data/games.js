@@ -120,7 +120,7 @@ export const gameData = {
       "description": "Silent but deadly Task Force 141 operative specializing in covert operations and stealth missions.",
       "traits": ["Stealth Operations", "Silent Professional", "Covert Specialist"],
       "fullDescription": "Gary 'Roach' Sanderson is a highly trained operative who served alongside Soap MacTavish during key moments of the conflict against Makarov. He is the main playable character in a significant portion of Modern Warfare 2, performing critical tasks that push the story forward.",
-      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.namu.wiki/i/3KM4Jm04ID0DXNdKX_n6wWyPmuVFlKnbna83n-TC9RDt938qMeLeTK7IQbpgIzjfYbRK3JOyyNnIErgxC3GjxA.webp",
       "icon": "Shield"
     },
     {
@@ -130,7 +130,7 @@ export const gameData = {
       "description": "A former Spetsnaz turned Russian Loyalist. He has a complicated history with Makarov and becomes a crucial ally to Task Force 141.",
       "traits": ["Resilience", "Redemption", "Insider Knowledge"],
       "fullDescription": "Once a member of Makarov's inner circle, Yuri witnessed the horrific consequences of his actions, including the infamous Zakhaev airport massacre. This led him to turn on his former comrade and seek redemption by aiding Price and Soap in their final mission to hunt down Makarov and end his reign of terror.",
-      "image": "https://images.unsplash.com/photo-1629831968132-75d81b31278f?w=300&h=400&fit=crop&crop=face",
+      "image": "https://pm1.aminoapps.com/6505/6e6959c2c9a8a4b4f750073cb4f45b96f97405c2_00.jpg",
       "icon": "Sword"
     },
     {
@@ -140,7 +140,7 @@ export const gameData = {
       "description": "Reliable Army Ranger corporal serving under Sergeant Foley in the defense of America.",
       "traits": ["Reliability", "Team Support", "Combat Ready"],
       "fullDescription": "James Ramirez's squadmate and a seasoned Army Ranger, Dunn is a pragmatic and loyal soldier. He assists the player character throughout the invasion of the U.S. in Modern Warfare 2, providing crucial support and tactical guidance in intense urban warfare scenarios.",
-      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=face",
+      "image": "https://www.giantbomb.com/a/uploads/scale_small/0/5774/1231487-cpl_dunn.png",
       "icon": "Users"
     },
     {
@@ -150,7 +150,7 @@ export const gameData = {
       "description": "Experienced Army Ranger sergeant leading troops through intense urban warfare in Washington D.C.",
       "traits": ["Urban Combat Expert", "Squad Leader", "Battle-Hardened"],
       "fullDescription": "Foley is the commanding officer of the Army Ranger squad that Private Ramirez is a part of. He's a decisive leader who navigates his team through the chaotic American invasion, giving clear orders and providing crucial strategic direction during the most challenging firefights.",
-      "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.redd.it/86pqfvlsqhx31.png",
       "icon": "Shield"
     },
     {
@@ -160,7 +160,7 @@ export const gameData = {
       "description": "A U.S. Army Ranger who is handpicked by General Shepherd to go undercover within Makarov's organization.",
       "traits": ["Undercover", "Special Operations", "Patriotism"],
       "fullDescription": "Joseph Allen is a playable character at the beginning of Modern Warfare 2. His mission is to infiltrate the Inner Circle of Makarov's ultranationalist group. His dedication to his country leads him to participate in the infamous 'No Russian' mission, which ultimately culminates in his death and sets the stage for the rest of the game's narrative.",
-      "image": "https://images.unsplash.com/photo-1558223637-bfd28a3f820c?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/2e/f7/de/2ef7deea880f5157772635c62d90e159.jpg",
       "icon": "Crosshair"
     },
     {
@@ -170,7 +170,7 @@ export const gameData = {
       "description": "Young but skilled Army Ranger private fighting to defend the homeland against invasion.",
       "traits": ["Determination", "Quick Learner", "Brave Soldier"],
       "fullDescription": "James Ramirez is the primary playable character for the American invasion storyline in Modern Warfare 2. He is tasked with defending the country from a Russian invasion, taking part in a number of intense urban battles in iconic American cities.",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.redd.it/bej3bugj3yf81.jpg",
       "icon": "Star"
     },
     {
@@ -180,7 +180,7 @@ export const gameData = {
       "description": "The main antagonist of the Modern Warfare trilogy. A cunning and ruthless Russian ultranationalist and terrorist.",
       "traits": ["Terrorist", "Ruthless", "Mastermind"],
       "fullDescription": "Vladimir Makarov is one of the most infamous antagonists in gaming history. He is a fanatical ultranationalist driven by a desire for global chaos. His actions are the catalyst for multiple wars, and he is directly responsible for some of the most shocking events in the series, making him the ultimate target for Task Force 141.",
-      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.redd.it/2a6dub6j5ce61.png",
       "icon": "Crown"
     },
     {
@@ -190,7 +190,7 @@ export const gameData = {
       "description": "A trustworthy Russian informant and ally to the SAS and Task Force 141, often acting as a pilot and logistic expert.",
       "traits": ["Loyal Ally", "Skilled Pilot", "Intel Provider"],
       "fullDescription": "Nikolai is a crucial ally throughout the Modern Warfare trilogy. He provides essential intelligence, transportation, and support to Price's team, often at great personal risk. His network of contacts and expertise in the Russian underworld make him an invaluable asset.",
-      "image": "https://images.unsplash.com/photo-1581403341630-f6c129fe590f?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/5f/52/81/5f52810d9a45d840d67acc4aa792edb6.jpg",
       "icon": "Truck"
     },
     {
@@ -200,7 +200,7 @@ export const gameData = {
       "description": "A high-ranking CIA officer who acts as the primary liason between the CIA and Task Force 141 in the 2019 Modern Warfare reboot.",
       "traits": ["Strategic", "Intelligence", "Pragmatic"],
       "fullDescription": "Kate Laswell is a key intelligence figure in the war on terror. She is responsible for briefing the team, analyzing threats, and coordinating with international partners. She maintains a level-headed demeanor even in the most chaotic situations, providing critical guidance from behind the scenes.",
-      "image": "https://images.unsplash.com/photo-1557862921-37829c790f95?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.redd.it/eity4469xdj91.jpg",
       "icon": "Heart"
     },
     {
@@ -210,7 +210,7 @@ export const gameData = {
       "description": "Leader of the Urzikstani Liberation Force and a determined freedom fighter against Russian occupation.",
       "traits": ["Leadership", "Resilient", "Strategic"],
       "fullDescription": "Farah is a fierce and capable leader who has been fighting for her country since she was a child. Her personal history and dedication to liberating Urzikstan are central to the story of the Modern Warfare reboot. She is a master tactician and an expert in guerrilla warfare.",
-      "image": "https://images.unsplash.com/photo-1627992797746-b6058097d748?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/31/56/4c/31564cb4d3939b9331705a3513621c2b.jpg",
       "icon": "Shield"
     },
     {
@@ -220,7 +220,7 @@ export const gameData = {
       "description": "A field operative for the CIA Special Activities Division, working closely with Farah and her forces.",
       "traits": ["Undercover", "Special Ops", "Loyal"],
       "fullDescription": "Alex is a highly trained operative who is sent to Urzikstan to aid Farah in her fight against a global threat. He is a pragmatic and resourceful soldier who forms a strong bond with Farah and her cause. His dedication leads him to make great sacrifices to protect his allies and complete the mission.",
-      "image": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop&crop=face",
+      "image": "https://preview.redd.it/v70r8dqn4vt61.jpg?width=640&crop=smart&auto=webp&s=152a1ce4e1dec2b70f99e932f701218174904cdc",
       "icon": "Star"
     },
     {
@@ -230,7 +230,7 @@ export const gameData = {
       "description": "The enigmatic commander of the private military company, Shadow Company. He is a pragmatic leader with a hidden agenda.",
       "traits": ["Ruthless", "Ambitious", "Strategic"],
       "fullDescription": "Graves presents himself as an ally to Task Force 141 in their hunt for a new threat. However, his true intentions are revealed, putting him in direct conflict with his former allies. His military expertise and powerful resources make him a formidable adversary.",
-      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://preview.redd.it/mw2-what-do-you-guys-think-about-the-fan-theory-that-graves-v0-6wtdysqy5kbd1.jpg?width=640&crop=smart&auto=webp&s=74d0c08b3358ff84424dccaf5dfb094308272718",
       "icon": "Target"
     },
     {
@@ -240,17 +240,17 @@ export const gameData = {
       "description": "A U.S. Marine fighting in the Middle East during the initial conflict against Khaled Al-Asad.",
       "traits": ["Courageous", "Disciplined", "Patriotic"],
       "fullDescription": "Jackson is a playable character in Modern Warfare (2007) and serves as the eyes of the U.S. Marine Corps campaign. He and his squad are sent to an unnamed Middle Eastern country to hunt down the terrorist leader Al-Asad. His story highlights the intense and dangerous nature of urban warfare.",
-      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://assets.mycast.io/posters/call-of-duty-modern-warfare-2007-fan-casting-poster-295028-large.jpg?1677795961",
       "icon": "Shield"
     },
     {
       "id": 17,
       "name": "Vasquez",
-      "role": "U.S. Marine Captain",
+      "role": "U.S. Marine lt",
       "description": "The commanding officer of Paul Jackson's squad, a no-nonsense and dedicated Marine leader.",
       "traits": ["Leadership", "Strict", "Experienced"],
       "fullDescription": "Captain Vasquez is a veteran Marine who leads his troops through the treacherous urban environments of the Middle East. He is a direct and efficient commander focused on completing his mission and protecting his soldiers.",
-      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.ytimg.com/vi/-l_xemuuHMI/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLDKVmXCBhrCKxvlxfSmhAxdSlcAfA",
       "icon": "Star"
     },
     {
@@ -260,7 +260,7 @@ export const gameData = {
       "description": "A Russian loyalist officer who initially works with the SAS and later assists Price in the fight against ultranationalists.",
       "traits": ["Resourceful", "Loyal", "Veteran"],
       "fullDescription": "Sergeant Kamarov serves as an important point of contact and an ally for Captain Price's team in Russia. He and his men provide ground support and intelligence during key missions, highlighting the alliance between different factions against a common enemy.",
-      "image": "https://images.unsplash.com/photo-1550927407-5bd4b2190f84?w=300&h=400&fit=crop&crop=face",
+      "image": "https://www.giantbomb.com/a/uploads/scale_medium/8/80630/1664143-kamarov_1111_wiki.jpg",
       "icon": "Heart"
     },
     {
@@ -270,7 +270,7 @@ export const gameData = {
       "description": "A ruthless terrorist leader and a primary antagonist in the first Modern Warfare game.",
       "traits": ["Terrorist", "Deceptive", "Ruthless"],
       "fullDescription": "Khaled Al-Asad is a key figure in the terrorist organization allied with Imran Zakhaev. His actions, including the public execution of an innocent president, ignite a conflict that draws the U.S. and its allies into a global war.",
-      "image": "https://images.unsplash.com/photo-1541648232230-c3d386227653?w=300&h=400&fit=crop&crop=face",
+      "image": "https://preview.redd.it/cod4-did-you-feel-sorry-for-khaled-al-asad-v0-1r96bglvzb3f1.jpeg?auto=webp&s=1f975e104213f6b72cb1ccb7f22e8a6d85fe6ef6",
       "icon": "Crown"
     },
     {
@@ -280,7 +280,7 @@ export const gameData = {
       "description": "A member of Paul Jackson's squad and a key ally to Price's team. Known for his humor and bravery.",
       "traits": ["Brave", "Loyal", "Experienced"],
       "fullDescription": "Sergeant Griggs is a highly capable Marine who survives the initial invasion and becomes an invaluable asset to Captain Price. He provides assistance and comic relief in tense situations, often fighting alongside the player in critical missions.",
-      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.imgur.com/7HdXkR3.jpg",
       "icon": "Users"
     },
     {
@@ -290,7 +290,17 @@ export const gameData = {
       "description": "The fanatical founder of the Russian ultranationalist party, and the main antagonist in the first Modern Warfare game.",
       "traits": ["Fanatical", "Terrorist", "Vengeful"],
       "fullDescription": "Zahkaev is a central figure in the original Modern Warfare's plot. His actions, including providing the nuclear detonator to Al-Asad, lead to a massive conflict. He is a master manipulator who orchestrates a global crisis from the shadows, fueled by a desire for a powerful, restored Russia.",
-      "image": "https://images.unsplash.com/photo-1579483321685-649f81216d80?w=300&h=400&fit=crop&crop=face",
+      "image": "https://preview.redd.it/cod-if-any-call-of-duty-villain-had-wasted-potential-its-v0-akz46ptc4rzd1.jpeg?auto=webp&s=9deb39cddf163e28849acc6ca7376dbce46306ee",
+      "icon": "Crown"
+    },
+    {
+      "id": 22,
+      "name": "Victor Zakhaev",
+      "role": "Russian Ultranationalist",
+      "description": "The son of Imran Zakhaev and a key lieutenant in his father's ultranationalist organization.",
+      "traits": ["Loyal", "Brutal", "Zealous"],
+      "fullDescription": "Victor Zakhaev plays a pivotal role in the plot of Modern Warfare. While serving as one of his father's key lieutenants, he is cornered by Task Force 141 in a Russian safehouse. His capture and subsequent suicide by a grenade are a major turning point in the game, as his death fuels his father's final, vengeful attack against the West. Victor's death demonstrates the fanatical dedication of the Zakhaev family to their cause.",
+      "image": "https://img.thenerdstash.com/wp-content/uploads/2023/09/Victor-Zakhaev-Warzone.jpg",
       "icon": "Crown"
     },
     {
@@ -300,7 +310,7 @@ export const gameData = {
       "description": "Experienced SAS captain and Price's former mentor, known for his sniper expertise and tactical knowledge.",
       "traits": ["Sniper Expert", "Mentor Figure", "Tactical Wisdom"],
       "fullDescription": "Captain MacMillan is a living legend in the SAS. He serves as Captain Price's mentor during a harrowing mission to assassinate Imran Zahkaev in the past. Despite being injured, he displays incredible resilience and strategic cunning, becoming a key figure in Price's development as a leader.",
-      "image": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=400&fit=crop&crop=face",
+      "image": "https://pm1.aminoapps.com/7414/d1de2217ce41deb83f727e8a456859c7e1d5f12dr1-1080-622v2_00.jpg",
       "icon": "Target"
     },
     {
@@ -310,7 +320,7 @@ export const gameData = {
       "description": "A charismatic and highly skilled officer of the Mexican Special Forces, working closely with Task Force 141.",
       "traits": ["Leadership", "Skilled", "Protective"],
       "fullDescription": "Colonel Vargas leads the 'Los Vaqueros' team and is a primary ally to Ghost and Soap in Modern Warfare II (2022). His intimate knowledge of the region and his tactical expertise are invaluable in the fight against a drug cartel and a major terrorist threat. He is a fiercely loyal and protective leader.",
-      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.ytimg.com/vi/RSRRYrCYTXg/maxresdefault.jpg",
       "icon": "Shield"
     },
     {
@@ -320,7 +330,7 @@ export const gameData = {
       "description": "Alejandro Vargas's second-in-command and a vital member of the Los Vaqueros team.",
       "traits": ["Supportive", "Loyal", "Stealthy"],
       "fullDescription": "Sergeant Rudy Parra is a loyal and capable second-in-command to Colonel Vargas. He provides crucial support to both Los Vaqueros and Task Force 141, often assisting with reconnaissance and flanking maneuvers. His unwavering dedication makes him a trustworthy ally.",
-      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/564x/4c/66/ae/4c66aee10282f2b1b988a2df115f2339.jpg",
       "icon": "Users"
     },
     {
@@ -330,7 +340,7 @@ export const gameData = {
       "description": "A skilled Delta Force operative and the main playable character in the Delta Force campaign in Modern Warfare 3.",
       "traits": ["Precision", "Stealth", "Endurance"],
       "fullDescription": "Sgt. First Class Derek 'Frost' Westbrook is a member of Delta Force's Team Metal, a key component in the fight against the Russian invasion. He is highly proficient in both covert and direct action, often leading the charge in some of the game's most pivotal battles, from New York to Paris.",
-      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/7f/d0/e7/7fd0e78a31213faadfee563c0b75f2a0.jpg",
       "icon": "Crosshair"
     },
     {
@@ -340,7 +350,7 @@ export const gameData = {
       "description": "The leader of Delta Force's elite Team Metal, and a key ally to Price and Soap in Modern Warfare 3.",
       "traits": ["Leadership", "Tactical", "Special Ops"],
       "fullDescription": "Master Sergeant Sandman is a respected and highly capable leader. He commands Team Metal with authority and precision, working in tandem with Task Force 141 to stop the escalating global conflict. His team's expertise in urban warfare is crucial to the success of the allied forces.",
-      "image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/474x/bc/ff/d5/bcffd53a2ea30a95d5a13b35c483afa8.jpg",
       "icon": "Shield"
     },
     {
@@ -350,7 +360,7 @@ export const gameData = {
       "description": "A member of Delta Force's Team Metal, known for his calm and collected demeanor in combat.",
       "traits": ["Steady Hand", "Marksman", "Supportive"],
       "fullDescription": "Sgt. First Class Marcus 'Grinch' Burns is a key member of Sandman's team. He provides crucial overwatch and fire support during a variety of missions, from the assault on Hamburg to the defense of Paris. His calm under pressure makes him an invaluable part of the squad.",
-      "image": "https://images.unsplash.com/photo-1627992797746-b6058097d748?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.pinimg.com/736x/e5/dd/e4/e5dde4bd38e42471aa197b0b78ba5dea.jpg",
       "icon": "Target"
     },
     {
@@ -360,18 +370,19 @@ export const gameData = {
       "description": "A heavy-duty Delta Force operator known for his strength and direct approach to combat.",
       "traits": ["Heavy Hitter", "Resilient", "Frontline Fighter"],
       "fullDescription": "Sgt. First Class Truck is the third member of Team Metal, often leading the assault with heavy weaponry. His rugged build and direct approach make him a formidable force in any engagement. He is a reliable teammate and is always ready for a direct fight.",
-      "image": "https://images.unsplash.com/photo-1549068106-b024baf5062d?w=300&h=400&fit=crop&crop=face",
+      "image": "https://i.redd.it/seen-no-posts-about-them-so-just-random-pictures-of-grinch-v0-6ptvdfaix44d1.jpg?width=567&format=pjpg&auto=webp&s=c6248f5009173d1397b0b5671c46ae472ae46703",
       "icon": "Truck"
     },
     {
-      "id": 29,
-      "name": "Overlord",
-      "role": "Delta Force Command",
-      "description": "The tactical commander who provides mission-critical intel and support to Team Metal from the air.",
-      "traits": ["Intelligence", "Tactical", "Supportive"],
-      "fullDescription": "Overlord is the voice of command for Team Metal. He is the person behind the scenes, providing aerial reconnaissance, intel, and tactical advice to the operators on the ground. His strategic guidance is essential for the team's success in high-stakes environments.",
-      "image": "https://images.unsplash.com/photo-1557862921-37829c790f95?w=300&h=400&fit=crop&crop=face",
-      "icon": "Users"
+      "id": 23,
+      "name": "General Shepherd",
+      "role": "US Army General / Antagonist",
+      "description": "A highly ambitious and manipulative military leader who orchestrates a global conflict for his own vengeful agenda.",
+      "traits": ["Ambitious", "Manipulative", "Vengeful", "Ruthless"],
+      "fullDescription": "General Shepherd is the commander of the U.S. Army Rangers and the founder of the elite Task Force 141. Haunted by the loss of 30,000 of his men to a nuclear blast, he becomes obsessed with vengeance. He betrays his own forces, killing fan-favorites Ghost and Roach, to frame Makarov and incite a global war, believing that a manufactured conflict is the only way to restore America's former glory and secure his legacy. His famous quote, 'The more things change, the more they stay the same,' encapsulates his cynical view of history and conflict.",
+      "game": "Call of Duty: Modern Warfare 2",
+      "image": "https://i.pinimg.com/736x/1d/14/b6/1d14b6f2c6db5b94ab222356325bfd3b.jpg",
+      "icon": "Crown"
     },
       ],
       weapons: [
