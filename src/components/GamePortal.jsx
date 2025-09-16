@@ -5,9 +5,12 @@ import {
   ChevronRight, Gamepad2
 } from 'lucide-react';
 
-import { games } from '../data/games'; // adjust path as needed
-import { gameData } from '../data/games'; // adjust path as needed
-import CharacterProfile from './CharacterProfile'; // Import the new component
+import { games } from '../data/games'; 
+import {categorySummaries} from '../data/categorySummaries'
+import { gameData } from '../data/games'; 
+import CharacterProfile from './CharacterProfile'; 
+import WeaponProfile from './WeaponProfile'; 
+import GroupsProfile from './GroupsProfile'; 
 
 
 
@@ -45,7 +48,7 @@ const iconMapping = {
   const categoryIcons = {
     characters: Users,
     weapons: Apple,
-    armor: ShieldCheck,
+    groups: ShieldCheck, // <-- Changed 'armor' to 'groups'
     vehicles: Car,
     locations: Crown
   };
@@ -193,9 +196,7 @@ const GamePage = () => {
   const game = games.find(g => g.id === currentPage);
   const currentData = gameData[currentPage]?.[selectedCategory] || [];
   const availableCategories = game?.categories || [];
-  const isCharacter = selectedCategory === 'characters';
 
-   // New section to hold category summaries
     const categorySummaries = {
       characters: {
         title: "Meet the Heroes & Villains",
@@ -203,15 +204,15 @@ const GamePage = () => {
       },
       weapons: {
         title: "Arsenal and Equipment",
-        description: "Explore the vast collection of weapons, from classic firearms to futuristic blasters and specialized gear."
+        description: "Explore the vast collection of weapons, from Ancient artifacts to galactic blasters."
       },
       vehicles: {
         title: "Vehicles of War",
         description: "Discover the powerful machines that dominate the battlefield, including tanks, jets, and starships."
       },
-      armor: {
-        title: "Protective Gear",
-        description: "Examine the various types of armor and protective suits worn by heroes and villains throughout the series."
+      groups: { // <-- Changed 'armor' to 'groups'
+        title: "Factions and Organizations",
+        description: "Uncover the secrets of the major factions, from the noble Assassins to the ruthless Templars, the ancient Jedi, and powerful military corporations."
       },
       locations: {
         title: "Iconic Locations",
@@ -231,9 +232,15 @@ const GamePage = () => {
       setShowProfile(false);
     };
 
-    // Conditional rendering: Show character profile if 'showProfile' is true
-    if (showProfile && selectedItem && isCharacter) {
-      return <CharacterProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+    // CONDITIONAL STATEMENTS: SHOWING PROFILE OF EACH CATEGORY
+    if (showProfile && selectedItem) {
+      if (selectedCategory === 'characters') {
+        return <CharacterProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+      } else if (selectedCategory === 'weapons') {
+        return <WeaponProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+      } else if (selectedCategory === 'groups') { // <-- New conditional rendering for groups
+        return <GroupsProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+      }
     }
 
   return (
@@ -308,10 +315,10 @@ const GamePage = () => {
                   className={`group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 cursor-pointer ${
                     isVisible[item.id] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
-                  onClick={() => isCharacter ? handleItemClick(item) : null} // Conditionally handle click
+                  onClick={() => handleItemClick(item)} // This now handles all clicks
                 >
                   {/* IMAGE */}
-                  <div className={`relative ${isCharacter ? 'h-64' : 'h-48'} overflow-hidden`}>
+                  <div className={`relative ${selectedCategory === 'characters' ? 'h-64' : 'h-48'} overflow-hidden`}>
                     <img
                       src={item.image}
                       alt={item.name}

@@ -5,7 +5,7 @@ export const categorySummaries = {
   },
   "poe": {
     title: "Arsenal and Equipment",
-    description: "Explore the vast collection of weapons, from classic firearms to futuristic blasters and specialized gear."
+    description: "Explore the vast collection of weapons, from Ancient artifacts to futuristic blasters and specialized gear."
   },
   vehicles: {
     title: "Vehicles of War",

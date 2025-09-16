@@ -35,7 +35,7 @@ export const games = [
       gradient: 'from-red-800 via-amber-700 to-yellow-600',
       image: 'https://www.yourdecoration.com/cdn/shop/files/gbeye-fp4070-assassins-creed-characters-poster-61x91-5cm_60a115ba-9f78-4a9f-99ed-93a930d0119f.jpg?v=1756128956',
       icon: Sword,
-      categories: ['characters', 'weapons', 'armor', 'locations'],
+      categories: ['characters', 'weapons', 'groups', 'locations'],
   }
 ];
 
@@ -478,7 +478,7 @@ export const gameData = {
 
         // ASSASSIN CREED SECTION
         'ac-series': {
-              characters: [
+            characters: [
                 {
               "id": 1,
               "name": "Altaïr Ibn-La'Ahad",
@@ -1212,8 +1212,8 @@ export const gameData = {
           }
               
             ],
-            //PIECES OF EDEN 
-            weapons: [
+          //PIECES OF EDEN 
+          weapons: [
             {
             "id": 1,
             "name": "Apple of Eden",
@@ -1231,7 +1231,7 @@ export const gameData = {
             "type": "Blade",
             "description": "A powerful sword that grants its wielder incredible charisma, combat prowess, and the ability to project energy blasts.",
             "fullDescription": "The Sword of Eden is a legendary Isu artifact disguised as a blade. It enhances the wielder's charisma, making them an inspirational leader capable of commanding armies. It also amplifies physical strength and agility, and can be used to fire powerful energy blasts. These swords have been wielded by historical figures like King Arthur (as Excalibur) and Jeanne d'Arc. In Assassin's Creed Unity, one was used by the Templar François-Thomas Germain and later by the Assassin Arno Dorian.",
-            "image": "https://fbi.cults3d.com/uploaders/17428531/illustration-file/ea92def9-8434-4678-9cc1-380df9a5019b/untitled-5.png",
+            "image": "https://cdnb.artstation.com/p/assets/images/images/072/682/639/large/lorenzo-tagliatesta-photo-2024-02-14-23-08-54.jpg?1707948950",
             "specs": ["Enhanced Charisma", "Combat Augmentation", "Energy Projection"],
             "icon": "Sword"
             },
@@ -1241,7 +1241,7 @@ export const gameData = {
             "type": "Staff/Scepter",
             "description": "A staff that can amplify the power of an Apple of Eden, control minds, and even grant a form of immortality.",
             "fullDescription": "The Staff of Eden, also known as the Papal Staff or Staff of Hermes, is a versatile Isu artifact. It can be used as a weapon, a key, and a conduit for immense power. In Assassin's Creed II, Rodrigo Borgia used the Papal Staff to amplify the power of his Apple of Eden. In Assassin's Creed Odyssey, the Staff of Hermes was a central plot device, granting the wielder, Kassandra, a form of biological immortality and a connection to the Isu network.",
-            "image": "https://static.wikia.nocookie.net/ipdkverse/images/a/a4/Papal_Staff_of_Eden.png/revision/latest?cb=20180624225412",
+            "image": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.6435-9/101845495_2602306759870217_7411939699679297536_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bYokEgpHEw8Q7kNvwFK-FZN&_nc_oc=AdnyVyOS870rli44J7MnQtoZiii0L0AIbqhZi05X1NeLA4PcP5g-iDwCosVr7Tt5W2M&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&_nc_gid=ZdPx2TD2jGTrtIHn8aY5Hw&oh=00_AfbXgrfqxJcQD4asGdLdS0UQp5t4FIl-4uyJ0ZBU3bNvQw&oe=68F1256A",
             "specs": ["Amplification", "Mind Control", "Immortality"],
             "icon": "Crosshair"
             },
@@ -1251,17 +1251,17 @@ export const gameData = {
             "type": "Linen Cloth",
             "description": "A linen cloth with immense regenerative properties, capable of healing wounds and even resurrecting the recently deceased.",
             "fullDescription": "The Shroud of Eden is a rare and powerful Piece of Eden. It is a linen cloth that can heal any wound and even bring the recently deceased back to life, though not without a price. It was famously known as the Shroud of Turin. In Assassin's Creed Syndicate, the Templar Grand Master, Crawford Starrick, sought to use it to secure absolute power over London. Its regenerative abilities made it one of the most sought-after artifacts by both the Assassins and the Templars.",
-            "image": "https://i.ytimg.com/vi/q1R2F0jPj8Y/maxresdefault.jpg",
+            "image": "https://harrisonanderson123.wordpress.com/wp-content/uploads/2018/02/shroud-of-consus.jpg",
             "specs": ["Healing", "Regeneration", "Resurrection"],
             "icon": "ShieldCheck"
             },
             {
             "id": 5,
-            "name": "Spear of Leonidas",
+            "name": "Spear of Eden",
             "type": "Spearhead",
             "description": "A powerful Isu spear, a shattered Piece of Eden that grants its wielder incredible strength and special abilities.",
             "fullDescription": "The Spear of Leonidas is a broken Isu artifact that was passed down through the bloodline of Kassandra and Alexios. Unlike other Pieces of Eden, it is a shattered object that doesn't have a grand, world-ending power, but rather augments the user's physical abilities. It can be upgraded by collecting Fragments of Eden, granting new powers like enhanced stealth, devastating attacks, and health regeneration. The Spear of Leonidas is the central weapon and a key part of the protagonist's identity in Assassin's Creed Odyssey.",
-            "image": "https://www.ubisoft.com/en-us/game/assassins-creed/odyssey/news-updates/1n6874bQd124zU57u3h6Bf/assassins-creed-odyssey-the-spear-of-leonidas",
+            "image": "https://i5.walmartimages.com/seo/Assassin-s-Creed-Odyssey-Spear-of-Leonidas_00f4f702-95c9-4bcb-99d7-706db7a59907.70b8b81975b8f7b748379db1a5c4d0bf.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
             "specs": ["Combat Augmentation", "Health Regeneration", "Elemental Attacks"],
             "icon": "Shield"
             },
@@ -1271,7 +1271,7 @@ export const gameData = {
             "type": "Diamond",
             "description": "A diamond-shaped Piece of Eden that can locate other Pieces of Eden and link their powers.",
             "fullDescription": "The Koh-i-Noor, or 'Mountain of Light,' is a legendary diamond that is secretly a Piece of Eden. It has the unique ability to locate and track other Pieces of Eden, making it an invaluable tool for both the Assassins and Templars. In addition, it is capable of linking the consciousness of its wielder to a 'Nexus,' a network of Isu artifacts. It was featured prominently in Assassin's Creed Chronicles: India, where the Assassin Arbaaz Mir sought to retrieve it from the Templars.",
-            "image": "https://i.ytimg.com/vi/cM7pB3rQ_jI/maxresdefault.jpg",
+            "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/07/assassin-s-creed-chronicles-india-abraaz-giving-koh-i-noor-ethan-frye.jpg?q=49&fit=crop&w=825&dpr=2",
             "specs": ["Artifact Tracking", "Nexus Connection", "Power Linking"],
             "icon": "Crown"
             },
@@ -1281,7 +1281,7 @@ export const gameData = {
             "type": "Sphere",
             "description": "A crystalline orb that allows its user to view the past and communicate with the Isu.",
             "fullDescription": "The Crystal Ball is a lesser-known Piece of Eden, but no less powerful. It functions as a communication device and a record of the past, allowing its user to witness historical events and communicate with the Isu. In Assassin's Creed 3, it was used by the protagonist Connor to communicate with the Isu Juno. It is a powerful tool for those seeking to understand the First Civilization's history and their plans for humanity.",
-            "image": "https://i.ytimg.com/vi/sW7P10q7F78/maxresdefault.jpg",
+            "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/07/assassin-s-creed-valhalla-eivor-holding-crystal-ball.jpg?q=49&fit=crop&w=825&dpr=2",
             "specs": ["Temporal Viewing", "Isu Communication", "Knowledge Transfer"],
             "icon": "Zap"
             },
@@ -1291,7 +1291,7 @@ export const gameData = {
             "type": "Box",
             "description": "A device that can store and siphon the power of other Pieces of Eden, capable of displaying holographic messages.",
             "fullDescription": "The Precursor Box is an enigmatic Isu artifact that functions as both a data storage device and a power source. It can siphon energy from other Pieces of Eden, and it is capable of displaying holographic messages from the Isu. It was a central object in Assassin's Creed Rogue and Assassin's Creed IV: Black Flag's 'Freedom Cry' DLC, where it was used to access the hidden knowledge of the Isu. It is a testament to the Isu's advanced technology and their ability to store immense amounts of information.",
-            "image": "https://i.pinimg.com/originals/9f/c7/a9/9fc7a9e0a0a501e40c5f2b31f7c3c267.jpg",
+            "image": "https://i.imgur.com/5VvEB56.jpg",
             "specs": ["Power Storage", "Holographic Projection", "Data Retrieval"],
             "icon": "Car"
             },
@@ -1301,10 +1301,179 @@ export const gameData = {
             "type": "Amulet",
             "description": "A symbol of life and immortality with the ability to heal and prolong a person's life.",
             "fullDescription": "The Ankh of Eden is an Isu artifact that holds the power of life and death. Similar to the Shroud, it possesses significant healing capabilities and can be used to extend a person's lifespan. Its powers are often associated with the Egyptian goddess Isis, and it's believed to be the basis for the mythological Ankh symbol. This piece is a testament to the Isu's advanced understanding of biology and consciousness, making it a valuable and dangerous artifact to possess.",
-            "image": "https://i.pinimg.com/originals/6c/3e/6e/6c3e6e8e82a208f237f37f3a8b4b19b4.jpg",
+            "image": "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/07/assassin-s-creed-ankh-from-comic.jpg?q=49&fit=crop&w=825&dpr=2",
             "specs": ["Life Extension", "Healing", "Revitalization"],
             "icon": "Heart"
             }
+        ],
+
+
+          groups: [
+              {
+            "id": 1,
+            "name": "The Assassin Brotherhood",
+            "type": "Secret Brotherhood",
+            "description": "A clandestine organization dedicated to fighting the Templars and preserving free will, guided by their core tenets.",
+            "fullDescription": "The Assassin Brotherhood is a centuries-old organization that believes in a world of peace achieved through free will. Their philosophy, known as 'The Creed,' guides their actions. They operate from the shadows, striking down those who would seek to control humanity. The Brotherhood has existed throughout history, with notable members including Altaïr Ibn-La'Ahad, Ezio Auditore da Firenze, and Ratonhnhaké:ton.",
+            "image": "https://i.pinimg.com/originals/3e/7b/07/3e7b07579898826f622611e1f2412b4a.jpg",
+            "specs": ["Stealth", "Agility", "Free Will"],
+            "game": "Assassin's Creed (Multiple)",
+            "icon": "Users"
+        },
+        {
+            "id": 2,
+            "name": "The Templar Order",
+            "type": "Military Order",
+            "description": "An ancient organization that seeks to impose order and control on humanity, believing that peace can only be achieved through a lack of free will.",
+            "fullDescription": "The Templar Order is the main antagonist force throughout the Assassin's Creed series. They believe that humanity is too chaotic to govern itself and that a new world order must be established through control. They are ruthless, cunning, and have infiltrated every major institution of power, from governments to religious organizations. Their leaders, such as Rodrigo Borgia and Haytham Kenway, are some of the most formidable foes the Assassins have faced.",
+            "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f18d4e01-eb24-4b24-9afe-07bf46a17d5b/d85xgje-76c9a6e6-b78c-4350-b1c1-5b17d41d0c3e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9mMThkNGUwMS1lYjI0LTRiMjQtOWFmZS0wN2JmNDZhMTdkNWIvZDg1eGdqZS03NmM5YTZlNi1iNzhjLTQzNTAtYjFjMS01YjE3ZDQxZDBjM2UuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gisy1CZtMqqQ7jLJUmVSONaXB4Puyc_JzLMe09g4d9E",
+            "specs": ["Control", "Discipline", "Order"],
+            "game": "Assassin's Creed (Multiple)",
+            "icon": "Templar"
+        },
+        {
+            "id": 3,
+            "name": "The Crusaders",
+            "type": "Religious Army",
+            "description": "Catholic European knights who participated in the Crusades, fighting for control of the Holy Land.",
+            "fullDescription": "The Crusaders were a powerful military force that arrived in the Holy Land during the Third Crusade. In Assassin's Creed, they are depicted as a zealous and often violent faction, with many Templars secretly operating within their ranks. The Assassins, led by Altaïr, often had to eliminate Templars hiding among the Crusader ranks to protect the innocent from their corrupt ambitions.",
+            "image": "https://cdn11.bigcommerce.com/s-o5r3sdh7a5/images/stencil/1280x1280/products/1005/11872/cm-se058p2__22288.1641678491.jpg?c=1",
+            "specs": ["Zealous", "Militant", "Devout"],
+            "game": "Assassin's Creed (1)",
+            "icon": "Sword"
+        },
+        {
+            "id": 4,
+            "name": "The Saracens",
+            "type": "Military Faction",
+            "description": "The local Arab forces who controlled the Holy Land and were in conflict with the Crusaders.",
+            "fullDescription": "The Saracens were the Muslim forces who fought against the Crusaders during the Third Crusade. They were led by figures like Saladin, a revered and respected military leader. In the first Assassin's Creed, the Saracen guards and soldiers serve as the primary opposition to the Crusaders, and Altaïr must navigate their territories carefully to complete his missions.",
+            "image": "https://i.pinimg.com/564x/ee/dc/2a/eedc2a1cdb2321c6c2998be541f8eb7a.jpg",
+            "specs": ["Resilient", "Strategic", "Defensive"],
+            "game": "Assassin's Creed (1)",
+            "icon": "Crosshair"
+        },
+        {
+            "id": 5,
+            "name": "Mercenaries",
+            "type": "Contract Soldiers",
+            "description": "Fighters-for-hire who sell their services to the highest bidder, often serving the Templars or other wealthy patrons.",
+            "fullDescription": "Mercenaries appear in several Assassin's Creed games, often as a neutral or antagonistic faction. They are not tied to a specific political or religious ideology but are motivated by money. In games like Assassin's Creed II and Brotherhood, Ezio could hire mercenary guilds to fight alongside him, turning the Templars' own tools against them.",
+            "image": "https://www.creativeuncut.com/gallery-16/art/acb-mercenaries-fight.jpg",
+            "specs": ["Ruthless", "Opportunistic", "Disloyal"],
+            "game": "Assassin's Creed (Multiple)",
+            "icon": "Shield"
+        },
+        {
+            "id": 6,
+            "name": "The Papal Army",
+            "type": "Religious-Military",
+            "description": "The private army of the Borgia Pope, used to enforce their will and maintain control over Rome.",
+            "fullDescription": "In Assassin's Creed Brotherhood, the Papal Army serves as the primary military force under the control of the Borgia family. They are well-equipped, disciplined, and loyal to the Pope, Rodrigo Borgia, who is secretly a high-ranking Templar. Ezio and the Assassins of Rome must dismantle their power by eliminating key targets and disrupting their operations across the city.",
+            "image": "https://www.magikaverse.com/wp-content/uploads/2024/06/AssassinsCreedBrotherhood_render_Swiss_Guard.jpg",
+            "specs": ["Loyal", "Corrupt", "Formidable"],
+            "game": "Assassin's Creed: Brotherhood",
+            "icon": "Crown"
+        },
+        {
+            "id": 7,
+            "name": "The Continental Army",
+            "type": "Rebel Military",
+            "description": "The unified force of the Thirteen Colonies during the American Revolution, fighting for independence from British rule.",
+            "fullDescription": "The Continental Army, led by General George Washington, is a key faction in Assassin's Creed III. The protagonist, Ratonhnhaké:ton (Connor), allies with them in their fight against the British. The Assassins support the Patriots' cause, believing that their fight for freedom aligns with the Brotherhood's ideals of free will.",
+            "image": "https://imgc.artprintimages.com/img/print/george-washington-taking-command-of-the-continental-army-american-revolution-july-1775_u-l-q1j4h3y0.jpg?artHeight=550&artPerspective=n&artWidth=550&background=fbfbfb",
+            "specs": ["Patriotic", "Determined", "Underdog"],
+            "game": "Assassin's Creed (3)",
+            "icon": "Star"
+        },
+        {
+            "id": 8,
+            "name": "The British Army",
+            "type": "Imperial Military",
+            "description": "The disciplined and well-equipped forces of the British Empire, serving as the main antagonists in the American colonies.",
+            "fullDescription": "The British Army is the primary military force of the British Empire, and its soldiers are a common sight in Assassin's Creed III and Assassin's Creed IV: Black Flag. In the American Revolution, they are the main opposition to the Continental Army, while in the Caribbean, they fight against pirates and rival colonial powers. They are known for their signature red coats and rigid fighting formations.",
+            "image": "https://i.pinimg.com/originals/3e/ed/91/3eed9145bc7c672ce366a6c9bc256271.jpg",
+            "specs": ["Disciplined", "Imperial", "Occupying"],
+            "game": "Assassin's Creed (3), Black Flag",
+            "icon": "ShieldCheck"
+        },
+        {
+            "id": 9,
+            "name": "Pirates",
+            "type": "Lawless Collective",
+            "description": "A group of opportunistic and rebellious seamen who operate outside the law, seeking wealth and freedom in the Caribbean.",
+            "fullDescription": "Pirates are the dominant faction in Assassin's Creed IV: Black Flag. Led by historical figures like Edward Kenway and Blackbeard, they form a collective of misfits who seek to live free from the oppressive rule of colonial empires. The Golden Age of Piracy serves as a backdrop for Edward Kenway's journey, as he finds himself caught between the Assassins and Templars.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Capture-of-Blackbeard.jpg",
+            "specs": ["Rebellious", "Lawless", "Free-spirited"],
+            "game": "Assassin's Creed: Black Flag",
+            "icon": "Skull"
+        },
+        {
+            "id": 10,
+            "name": "The Spanish Army",
+            "type": "Colonial Military",
+            "description": "The imperial forces of the Spanish Empire, who maintain control over their territories in the Caribbean and Central America.",
+            "fullDescription": "The Spanish Army is a major rival to both the British and the pirates in Assassin's Creed IV: Black Flag. They are often tasked with guarding valuable artifacts and treasure, making them a frequent target for Edward Kenway. Their navy is a formidable opponent, and their soldiers are well-trained and loyal to the Spanish Crown.",
+            "image": "https://img1.wsimg.com/isteam/ip/9c73235b-179b-4b3b-9073-ef5ed3d1b639/440px-Landing_of_Columbus_(2).jpg/:/",
+            "specs": ["Dominant", "Colonial", "Expansive"],
+            "game": "Assassin's Creed: Black Flag",
+            "icon": "Target"
+        },
+        {
+            "id": 11,
+            "name": "The Isu",
+            "type": "First Civilization",
+            "description": "A technologically advanced, pre-human civilization that created humanity and the Pieces of Eden.",
+            "fullDescription": "The Isu, also known as the First Civilization, were a highly advanced humanoid species that lived on Earth long before humanity. They created humanity as a servitor race and used powerful artifacts known as Pieces of Eden to control them. The Isu were wiped out by a cataclysmic solar flare, but their legacy lives on through their temples and artifacts, which the Assassins and Templars constantly fight over.",
+            "image": "https://www.accesstheanimus.com/GIN/29.png",
+            "specs": ["Ancient", "Advanced", "Superior"],
+            "game": "Assassin's Creed (Multiple)",
+            "icon": "Zap"
+        },
+        {
+            "id": 12,
+            "name": "The French Army",
+            "type": "Nationalist Military",
+            "description": "The armed forces of France, fighting during the tumultuous French Revolution.",
+            "fullDescription": "In Assassin's Creed Unity, the French Army and its various factions are a constant presence. The protagonist, Arno Dorian, must navigate the chaos of the French Revolution, fighting alongside revolutionary figures and against the royalist forces. The army's loyalty is divided, with some fighting for the new Republic and others for the old monarchy, making them a complex and unpredictable faction.",
+            "image": "https://i0.wp.com/militaryhistorynow.com/wp-content/uploads/2015/11/Napoleon_returned.jpg?resize=650%2C471&ssl=1",
+            "specs": ["Revolutionary", "Tumultuous", "Divided"],
+            "game": "Assassin's Creed: Unity",
+            "icon": "Users"
+        },
+        {
+            "id": 13,
+            "name": "The Roman Empire",
+            "type": "Ancient Empire",
+            "description": "The formidable military power that controlled much of Europe and the Mediterranean in ancient times.",
+            "fullDescription": "The Roman Empire is a central force in Assassin's Creed Origins and Assassin's Creed Valhalla. In Origins, the Roman occupation of Egypt is a source of conflict, as the people struggle under their oppressive rule. In Valhalla, the remnants of the Roman Empire are seen in the ruins and artifacts left behind, which Eivor can explore to uncover hidden secrets and stories of the First Civilization.",
+            "image": "https://kingtravelromania.com/wp-content/uploads/the-aquilifer-of-the-roman-army.jpg",
+            "specs": ["Expansionist", "Mighty", "Legionary"],
+            "game": "Assassin's Creed: Origins, Valhalla",
+            "icon": "Crown"
+        },
+        {
+            "id": 14,
+            "name": "Ottoman Army",
+            "type": "Imperial Military",
+            "description": "The vast and disciplined military forces of the Ottoman Empire, who controlled a significant portion of the world in the 16th century.",
+            "fullDescription": "The Ottoman Army is the formidable military force of the Ottoman Empire, the primary faction ruling Constantinople in Assassin's Creed: Revelations. Their presence is felt throughout the city as they maintain control and suppress any resistance. While the Janissaries are their most elite and well-known units, the army as a whole presents a significant threat to Ezio and the Assassins as they navigate the city and work to counter the Templar influence.",
+            "image": "https://pbs.twimg.com/media/Eeo87WhUMAEAfOw.png",
+            "specs": ["Vast", "Disciplined", "Imperial"],
+            "game": "Assassin's Creed: Revelations",
+            "icon": "ShieldCheck"
+        },
+        {
+            "id": 15,
+            "name": "The Byzantines",
+            "type": "Imperial Faction",
+            "description": "The remnants of the Eastern Roman Empire, who are in a state of political turmoil and conflict in Constantinople.",
+            "fullDescription": "The Byzantines appear in Assassin's Creed Revelations as a rival faction to the Ottoman Empire. They are the descendants of the Eastern Roman Empire and still hold a significant presence in Constantinople, even though the city is now under Ottoman control. The Byzantines are in a state of civil war and are manipulated by the Templars to destabilize the region.",
+            "image": "https://www.shutterstock.com/image-photo/byzantine-army-flag-invasion-600nw-2459510139.jpg",
+            "specs": ["Imperial", "Schismatic", "Feudal"],
+            "game": "Assassin's Creed: Revelations",
+            "icon": "Crown"
+        }
         ]
     }
     
