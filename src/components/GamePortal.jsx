@@ -80,7 +80,7 @@ const iconMapping = {
           {/* Background Image Layer */}
           <div className="absolute inset-0">
             <img
-              src="https://cdn.pixabay.com/photo/2016/11/29/04/17/controller-1867121_1280.jpg" // Replace with your preferred controller image URL
+              src="https://cdn3.whatculture.com/images/2014/08/video-game-cover-montage.png" // Replace with your preferred controller image URL
               alt="Game controller background"
               className="w-full h-full object-cover opacity-10 mix-blend-soft-light"
             />
@@ -99,7 +99,7 @@ const iconMapping = {
               Your Gateway to Gaming Legends
             </p>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
-              Explore legendary gaming universes. Choose your adventure and dive deep into characters, weapons, vehicles, and more.
+              Explore legendary gaming universes. Choose your adventure and take a leap of faith into our database.
             </p>
             <div className="animate-bounce">
               <ChevronDown className="mx-auto h-10 w-10 text-blue-400" />
@@ -113,7 +113,7 @@ const iconMapping = {
           Choose Your Universe
         </h2>
         <p className="text-center text-slate-400 mb-16 text-lg">
-          Select a game to explore its world, characters, and arsenal
+          Select a game to explore its world, characters and more
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
