@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# gh-pages cache
+node_modules/.cache/gh-pages
+
+# build output
+/build
+
+# misc
+.DS_Store
+.env
