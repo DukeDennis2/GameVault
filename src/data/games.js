@@ -25,7 +25,7 @@ export const games = [
       gradient: 'from-slate-800 via-gray-700 to-slate-600',
       image: 'https://assetsio.gnwcdn.com/call_of_duty_modern_warfare_trilogy.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp',
       icon: Crosshair,
-      categories: ['characters', 'weapons', 'vehicles']
+      categories: ['characters', 'weapons', 'groups', 'vehicles']
     },
     {
       id: 'ac-series',
@@ -394,6 +394,142 @@ export const gameData = {
           specs: ["6.8mm Remington SPC", "30-round magazine", "Modular design"],
           image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=300&h=200&fit=crop",
           icon: Crosshair
+        }
+      ],
+      groups: [
+        {
+            id: 1,
+            name: "Task Force 141",
+            type: "Special Operations Unit (Multi-national)",
+            description: "An elite, multi-national counter-terrorism and direct action unit, initially formed to counter the threat posed by the Russian Ultranationalist, Imran Zakhaev, and later his protege, Vladimir Makarov. Known for their high-profile, high-risk operations and key members like Captain Price, Soap, Ghost, and Gaz. They are a primary protagonist force in both the classic and reboot Modern Warfare timelines.",
+            specs: ["Multi-national personnel (primarily UK/US)", "Direct Action", "Counter-terrorism", "Protagonist Faction"],
+            image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be46b9c0-33a5-4084-a20e-94abbaab306b/d2dogl2-8781e32c-a4d1-4892-a4fb-792db704eaaa.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9iZTQ2YjljMC0zM2E1LTQwODQtYTIwZS05NGFiYmFhYjMwNmIvZDJkb2dsMi04NzgxZTMyYy1hNGQxLTQ4OTItYTRmYi03OTJkYjcwNGVhYWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hndZDILcwoY4JjseDiTLXrGKPJeSvBEQSeQrmEWBk_Q",             icon: "Crosshair"
+        },
+        {
+            id: 2,
+            name: "SAS (Special Air Service)",
+            type: "Tier 1 Special Forces (United Kingdom)",
+            description: "The United Kingdom's premier special forces unit, specializing in counter-terrorism, hostage rescue, and covert reconnaissance. Captain Price and Gaz are notable members of the SAS. They frequently serve as a foundational element of the Coalition and Task Force 141 in both the original and reboot series, known for their discipline and effectiveness in global operations.",
+            specs: ["'Who Dares Wins'", "Counter-terrorism", "Intelligence Gathering", "Direct Action"],
+            image: "https://i.pinimg.com/736x/2b/21/62/2b2162dfc13034f036959366b6638e19.jpg", 
+            icon: "Shield"
+        },
+        {
+            id: 3,
+            name: "USMC (United States Marine Corps)",
+            type: "Military Expeditionary Force (United States)",
+            description: "The sea-based land warfare service branch of the U.S. Armed Forces. The USMC is often deployed as a rapid-response force in conflict zones. In the original series, they are heavily featured in the initial U.S. invasion following the Russian invasion of the East Coast. They represent a major element of conventional military power supporting the Coalition.",
+            specs: ["Amphibious Warfare", "Expeditionary Operations", "Rapid Response", "Conventional Military"],
+            image: "https://preview.redd.it/dqmvxectwsr41.jpg?width=640&crop=smart&auto=webp&s=e170ac855664a58d07ef25a94331dfa9cabbbcd1", 
+            icon: "Anchor"
+        },
+        {
+            id: 4,
+            name: "US Army Rangers",
+            type: "Light Infantry Special Operations (United States)",
+            description: "An elite light infantry unit of the U.S. Army Special Operations Command. They played a crucial role in defending the U.S. homeland from the Russian invasion in *Modern Warfare 2 (2009)*, often fighting alongside conventional U.S. Army units. They are highly trained for direct action raids and air assault operations.",
+            specs: ["Air Assault", "Direct Action Raids", "Infiltration", "Special Operations"],
+            image: "https://i.ytimg.com/vi/w1_k9fOstA4/maxresdefault.jpg", 
+            icon: "Star"
+        },
+        {
+            id: 5,
+            name: "CIA / SAC (Special Activities Center)",
+            type: "Covert Paramilitary Operations (United States)",
+            description: "The SAC is the arm of the Central Intelligence Agency responsible for covert action and paramilitary operations. In the reboot series, they are a key intelligence and action element, often working closely with local forces and Task Force 141, performing missions that the U.S. government cannot officially acknowledge. Alex is a notable paramilitary operative in this group.",
+            specs: ["Covert Action", "Paramilitary Operations", "Intelligence Gathering", "Unacknowledged Missions"],
+            image: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/05/call-of-duty-cia-secret-warzone.jpg?w=1200&h=675&fit=crop", 
+            icon: "MagnifyingGlass"
+        },
+        {
+            id: 6,
+            name: "Delta Force",
+            type: "Tier 1 Special Forces (United States)",
+            description: "Officially the 1st Special Forces Operational Detachment-Delta (1st SFOD-D), this is the U.S. Army's top-tier counter-terrorism and special mission unit. They were prominently featured in *Modern Warfare 3 (2011)*, playing a significant role in the ongoing conflict against the Russian Ultranationalists on American soil and globally.",
+            specs: ["Counter-terrorism", "Hostage Rescue", "Direct Action", "Special Reconnaissance"],
+            image: "https://i.ytimg.com/vi/a72f7mHIpMI/maxresdefault.jpg", 
+            icon: "Lightning"
+        },
+        {
+            id: 7,
+            name: "Urzikstan Liberation Force (ULF)",
+            type: "Irregular Military/Militia (Middle East)",
+            description: "A local freedom-fighting militia operating in the fictional Middle Eastern country of Urzikstan in the reboot series. Led by Farah Karim, they fight against the occupying Russian forces and the terrorist group Al-Qatala. They are a critical partner force to the CIA and Task Force 141, providing local knowledge and boots on the ground.",
+            specs: ["Guerrilla Warfare", "Anti-occupation", "Local Intelligence", "Partner Force"],
+            image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3a702ca6-2509-4117-bde4-c53cd3abd470/di0k9cj-75cf4160-7e8f-4db0-bb19-67021bab487e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8zYTcwMmNhNi0yNTA5LTQxMTctYmRlNC1jNTNjZDNhYmQ0NzAvZGkwazljai03NWNmNDE2MC03ZThmLTRkYjAtYmIxOS02NzAyMWJhYjQ4N2UuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kvHBV0susJxKo_M2YfpsNWvT6mtl44OQGq_4BirTf_o", 
+            icon: "Fist"
+        },
+        {
+            id: 8,
+            name: "Mexican Special Forces – Los Vaqueros",
+            type: "Elite Special Forces (Mexico)",
+            description: "A highly-trained unit within the Mexican Special Forces, led by Colonel Alejandro Vargas. Known as 'Los Vaqueros,' they operate out of Mexico and are dedicated to countering the powerful Las Almas drug cartel. In the reboot *Modern Warfare II (2022)*, they become key allies to Task Force 141.",
+            specs: ["Counter-narcotics", "Border Security", "Direct Action", "Alliance with TF141"],
+            image: "https://img.gta5-mods.com/q95/images/mwii-mexican-special-forces-los-vaqueros-kit-pack-for-mp-male/e42b23-Chokehold.jpg", 
+            icon: "Badge"
+        },
+        {
+            id: 9,
+            name: "NATO / Coalition Forces",
+            type: "Multi-national Military Alliance",
+            description: "The broader military alliance representing the combined conventional forces of Western nations, including the U.S. and U.K. They provide the large-scale military framework, air support, and logistics that support the smaller, specialized operations of groups like the SAS and Task Force 141. They are the overarching friendly military faction.",
+            specs: ["Conventional Warfare", "Air & Naval Support", "Logistics", "Joint Operations"],
+            image: "https://images.unsplash.com/photo-1507721999468-b769260d37e2?w=300&h=200&fit:crop", 
+            icon: "Globe"
+        },
+        {
+            id: 10,
+            name: "Russian Ultranationalists",
+            type: "Political/Terrorist Movement (Russia)",
+            description: "The primary antagonist faction in the original *Modern Warfare* trilogy, led by figures like Imran Zakhaev and Vladimir Makarov. They are an extremist political movement seeking to restore the Soviet Union's global influence, using terrorism and unconventional warfare. Their actions, including the false flag invasion of the U.S., drive the core conflict.",
+            specs: ["Terrorism", "False Flag Operations", "Political Extremism", "Primary Antagonist (Classic MW)"],
+            image: "https://images.steamusercontent.com/ugc/779621085353156058/8B1D9CFCC7446A73651401EADB8DE9B89585CA2A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            icon: "Skull"
+        },
+        {
+            id: 11,
+            name: "Russian Armed Forces",
+            type: "Conventional Military (Russia)",
+            description: "The standing military of the Russian Federation. While they are sometimes allied or neutral with Western forces (depending on the specific game/timeline), they are often depicted as the primary opposing conventional military force, particularly during the invasion of the U.S. in the original *MW2* and the occupation of Urzikstan in the reboot series. Their disposition changes based on the political climate within the games.",
+            specs: ["Conventional Warfare", "Global Military Power", "Often Hostile", "Air & Ground Forces"],
+            image: "https://i.redd.it/anybody-know-what-camothe-russian-vdv-soldiers-wore-in-cod-v0-m0slytu5kmsd1.jpg?width=716&format=pjpg&auto=webp&s=c0ae230e0ae8186658c9b7f466a9dba38d288770", 
+            icon: "Tank"
+        },
+        {
+            id: 12,
+            name: "Al-Qatala (AQ)",
+            type: "Terrorist Organization (Middle East)",
+            description: "The main terrorist antagonist in the reboot *Modern Warfare* timeline, led by 'The Wolf' and 'The Butcher.' They are a highly organized, international terrorist group, often supported or manipulated by the Russian Ultranationalists. They utilize brutal tactics, chemical weapons, and operate across the Middle East and Europe, necessitating the intervention of Task Force 141 and the CIA.",
+            specs: ["International Terrorism", "Chemical Weapons Use", "Anti-Western Ideology", "Primary Antagonist (Reboot MW)"],
+            image: "https://cdnb.artstation.com/p/assets/images/images/068/395/015/4k/jordan-lamarre-wan-sp-al-qatala-tier3-elites.jpg?1697696963", 
+            icon: "Bomb"
+        },
+        {
+            id: 15,
+            name: "Konni Group",
+            type: "Russian Paramilitary/PMC",
+            description: "Introduced in the reboot series, the Konni Group is a mysterious Russian paramilitary faction, essentially a Private Military Company (PMC), that aligns itself with the goals of Vladimir Makarov. They are highly trained, well-equipped, and serve as Makarov's primary proxy force, often operating in a deniable capacity to execute his global terror plots.",
+            specs: ["Private Military Company (PMC)", "Proxy Force for Makarov", "High-Tech Gear", "Global Operations"],
+            image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2702fabd-fbb4-48a2-a39e-35c1907142af/didw5yy-49c5123d-690a-4db1-90dd-409f7f49155d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8yNzAyZmFiZC1mYmI0LTQ4YTItYTM5ZS0zNWMxOTA3MTQyYWYvZGlkdzV5eS00OWM1MTIzZC02OTBhLTRkYjEtOTBkZC00MDlmN2Y0OTE1NWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ctuEGY3lA_iLgcOeLfgyGByS01FH-mDGnmIWIst3nMo", 
+            icon: "Mask"
+        },
+        {
+            id: 16,
+            name: "Shadow Company",
+            type: "Private Military Company (PMC)",
+            description: "A controversial U.S. Private Military Company. In the original *MW2 (2009)*, they were led by General Shepherd and acted as his personal, highly-disciplined army, turning hostile against TF141. In the reboot *MWII (2022)*, they are led by Graves and serve the Coalition, though their loyalty and methods remain highly suspect, leading to another conflict with TF141.",
+            specs: ["Private Military Company (PMC)", "Highly Disciplined", "Ambiguous Morality", "Direct Action"],
+            image: "https://i.redd.it/7yrtcdbs264a1.jpg", 
+            icon: "Axe"
+        },
+        {
+            id: 17,
+            name: "Las Almas Cartel",
+            type: "Transnational Criminal Organization (Mexico)",
+            description: "A powerful and brutal drug cartel based in Mexico and operating internationally. In the reboot *Modern Warfare II (2022)*, they are a primary antagonist, evolving from a simple drug operation into a transnational terror threat with ties to Al-Qatala. Task Force 141 and Los Vaqueros must work together to dismantle their network.",
+            specs: ["Drug Trafficking", "Transnational Crime", "High-Level Corruption", "Terror Ties"],
+            image: "https://preview.redd.it/all-las-almas-cartel-enemy-models-showcase-v0-0ivhfpwtw3gf1.jpg?width=1080&crop=smart&auto=webp&s=1f64ada6358b634c3138cef3a09ef37880d4ab0c", 
+            icon: "Handcuffs"
         }
       ],
       vehicles: [

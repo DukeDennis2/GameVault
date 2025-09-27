@@ -48,7 +48,7 @@ const iconMapping = {
   const categoryIcons = {
     characters: Users,
     weapons: Apple,
-    groups: ShieldCheck, // <-- Changed 'armor' to 'groups'
+    groups: ShieldCheck, 
     vehicles: Car,
     locations: Crown
   };
@@ -212,7 +212,7 @@ const GamePage = () => {
       },
       groups: { // <-- Changed 'armor' to 'groups'
         title: "Factions and Organizations",
-        description: "Uncover the secrets of the major factions, from the ancient Assassins to the ruthless Templars, mythical armies, the ancient Jedis and siths and advanced military branches."
+        description: "Explore the iconic factions, from the ancient organisations to the most elite units in the world."
       },
       locations: {
         title: "Iconic Locations",
