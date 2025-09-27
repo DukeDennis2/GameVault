@@ -1,5 +1,5 @@
 import { 
-  ChevronDown, Sword, Apple, Templar, Target, Shield, Crown, Zap, Heart, Users, 
+  ChevronDown, Sword, Apple, Templar, Target, Shield, Crown, Zap, Heart, Users, User,
   ArrowLeft, Truck, Crosshair, ShieldCheck, Car, Home, Star,
   ChevronRight, Gamepad2
 } from 'lucide-react';
@@ -86,11 +86,11 @@ export const gameData = {
        {
       "id": 1,
       "name": "Captain Price",
-      "role": "Task Force 141 Leader / SAS",
+      "role": "Task Force 141 Leader / SAS captain ",
       "description": "Veteran SAS officer and leader of Task Force 141. Known for his tactical expertise, iconic mustache, and unwavering loyalty.",
       "traits": ["Leadership", "Tactical Genius", "Combat Veteran"],
       "fullDescription": "A legendary SAS operator, John Price has a distinguished career spanning decades. He is a formidable strategist and a master of both covert and overt operations. Price is a key figure in hunting down international threats and is a symbol of resilience and determination in the face of impossible odds.",
-      "image": "https://i.pinimg.com/originals/2d/05/ee/2d05eeea4f91f09b301049f29f5223ea.jpg",
+      "image": "https://wallpapercave.com/wp/wp7114845.jpg",
       "icon": "Target"
     },
     {
@@ -106,7 +106,7 @@ export const gameData = {
     {
       "id": 3,
       "name": "Ghost",
-      "role": "Task Force 141 Specialist / SAS",
+      "role": "Task Force 141 Specialist / SAS Lt",
       "description": "A mysterious and highly skilled operator known for his iconic skull mask and proficiency in stealth and psychological warfare.",
       "traits": ["Stealth Specialist", "Intimidation", "Covert Ops"],
       "fullDescription": "Simon 'Ghost' Riley is an enigmatic and ruthless Task Force 141 member. His past is shrouded in mystery, and he rarely speaks, letting his actions do the talking. He specializes in covert operations and is an expert at infiltrating enemy territory without a trace, using his presence alone to unnerve his enemies.",
@@ -118,7 +118,7 @@ export const gameData = {
       "name": "Roach",
       "role": "Task Force 141 Operative",
       "description": "Silent but deadly Task Force 141 operative specializing in covert operations and stealth missions.",
-      "traits": ["Stealth Operations", "Silent Professional", "Covert Specialist"],
+      "traits": ["Stealth Operations", "Silent Professional", "Covert Specialist", ],
       "fullDescription": "Gary 'Roach' Sanderson is a highly trained operative who served alongside Soap MacTavish during key moments of the conflict against Makarov. He is the main playable character in a significant portion of Modern Warfare 2, performing critical tasks that push the story forward.",
       "image": "https://i.namu.wiki/i/3KM4Jm04ID0DXNdKX_n6wWyPmuVFlKnbna83n-TC9RDt938qMeLeTK7IQbpgIzjfYbRK3JOyyNnIErgxC3GjxA.webp",
       "icon": "Shield"
@@ -128,7 +128,7 @@ export const gameData = {
       "name": "Yuri",
       "role": "Ex-Spetsnaz, Loyalist",
       "description": "A former Spetsnaz turned Russian Loyalist. He has a complicated history with Makarov and becomes a crucial ally to Task Force 141.",
-      "traits": ["Resilience", "Redemption", "Insider Knowledge"],
+      "traits": ["Resilience", "Redemption", "Insider Knowledge", ],
       "fullDescription": "Once a member of Makarov's inner circle, Yuri witnessed the horrific consequences of his actions, including the infamous Zakhaev airport massacre. This led him to turn on his former comrade and seek redemption by aiding Price and Soap in their final mission to hunt down Makarov and end his reign of terror.",
       "image": "https://pm1.aminoapps.com/6505/6e6959c2c9a8a4b4f750073cb4f45b96f97405c2_00.jpg",
       "icon": "Sword"
@@ -138,7 +138,7 @@ export const gameData = {
       "name": "Corporal Dunn",
       "role": "Army Ranger Corporal",
       "description": "Reliable Army Ranger corporal serving under Sergeant Foley in the defense of America.",
-      "traits": ["Reliability", "Team Support", "Combat Ready"],
+      "traits": ["Reliability", "Team Support", "Combat Ready", "Disciplined", "Loyal", "Tactical", "Resilient", "Courageous", "Resourceful", "Dependable", "Focused", "Strong-Willed", "Honorable"],
       "fullDescription": "James Ramirez's squadmate and a seasoned Army Ranger, Dunn is a pragmatic and loyal soldier. He assists the player character throughout the invasion of the U.S. in Modern Warfare 2, providing crucial support and tactical guidance in intense urban warfare scenarios.",
       "image": "https://www.giantbomb.com/a/uploads/scale_small/0/5774/1231487-cpl_dunn.png",
       "icon": "Users"
@@ -148,7 +148,7 @@ export const gameData = {
       "name": "Sergeant Foley",
       "role": "Army Ranger Sergeant",
       "description": "Experienced Army Ranger sergeant leading troops through intense urban warfare in Washington D.C.",
-      "traits": ["Urban Combat Expert", "Squad Leader", "Battle-Hardened"],
+      "traits": ["Urban Combat Expert", "Squad Leader", "Battle-Hardened", "Tactical", "Decisive", "Resilient", "Loyal", "Courageous", "Disciplined", "Resourceful", "Dependable", "Focused", "Strong-Willed", "Honorable"],
       "fullDescription": "Foley is the commanding officer of the Army Ranger squad that Private Ramirez is a part of. He's a decisive leader who navigates his team through the chaotic American invasion, giving clear orders and providing crucial strategic direction during the most challenging firefights.",
       "image": "https://i.redd.it/86pqfvlsqhx31.png",
       "icon": "Shield"
@@ -165,12 +165,12 @@ export const gameData = {
     },
     {
       "id": 9,
-      "name": "Private Ramirez",
+      "name": "Pvt Ramirez",
       "role": "Army Ranger Private",
       "description": "Young but skilled Army Ranger private fighting to defend the homeland against invasion.",
-      "traits": ["Determination", "Quick Learner", "Brave Soldier"],
+      "traits": ["Determination", "Quick Learner", "Brave Soldier", "Team Player", "Resilient", "Loyal", "Adaptable", "Courageous", "Disciplined", "Resourceful", "Tactical", "Dependable", "Focused", "Strong-Willed", "Honorable"],
       "fullDescription": "James Ramirez is the primary playable character for the American invasion storyline in Modern Warfare 2. He is tasked with defending the country from a Russian invasion, taking part in a number of intense urban battles in iconic American cities.",
-      "image": "https://i.redd.it/bej3bugj3yf81.jpg",
+      "image": "https://i.redd.it/vxt6gml0wbu51.jpg",
       "icon": "Star"
     },
     {
@@ -178,7 +178,7 @@ export const gameData = {
       "name": "Makarov",
       "role": "Ultranaionalist Leader",
       "description": "The main antagonist of the Modern Warfare trilogy. A cunning and ruthless Russian ultranationalist and terrorist.",
-      "traits": ["Terrorist", "Ruthless", "Mastermind"],
+      "traits": ["Terrorist", "Ruthless", "Mastermind", "Violent", "Manipulative", "Wicked" ],
       "fullDescription": "Vladimir Makarov is one of the most infamous antagonists in gaming history. He is a fanatical ultranationalist driven by a desire for global chaos. His actions are the catalyst for multiple wars, and he is directly responsible for some of the most shocking events in the series, making him the ultimate target for Task Force 141.",
       "image": "https://i.redd.it/2a6dub6j5ce61.png",
       "icon": "Crown"
@@ -188,7 +188,7 @@ export const gameData = {
       "name": "Nikolai",
       "role": "Russian Informant/Pilot",
       "description": "A trustworthy Russian informant and ally to the SAS and Task Force 141, often acting as a pilot and logistic expert.",
-      "traits": ["Loyal Ally", "Skilled Pilot", "Intel Provider"],
+      "traits": ["Loyal Ally", "Skilled Pilot", "Intel Provider", ],
       "fullDescription": "Nikolai is a crucial ally throughout the Modern Warfare trilogy. He provides essential intelligence, transportation, and support to Price's team, often at great personal risk. His network of contacts and expertise in the Russian underworld make him an invaluable asset.",
       "image": "https://i.pinimg.com/736x/5f/52/81/5f52810d9a45d840d67acc4aa792edb6.jpg",
       "icon": "Truck"
@@ -198,17 +198,17 @@ export const gameData = {
       "name": "Kate Laswell",
       "role": "CIA Station Chief",
       "description": "A high-ranking CIA officer who acts as the primary liason between the CIA and Task Force 141 in the 2019 Modern Warfare reboot.",
-      "traits": ["Strategic", "Intelligence", "Pragmatic"],
+      "traits": ["Strategic", "Intelligence", "Pragmatic", "Calm Under Pressure", "Resourceful", "Diplomatic", "Loyal", "Strong-Willed", "Honorable"],
       "fullDescription": "Kate Laswell is a key intelligence figure in the war on terror. She is responsible for briefing the team, analyzing threats, and coordinating with international partners. She maintains a level-headed demeanor even in the most chaotic situations, providing critical guidance from behind the scenes.",
       "image": "https://i.redd.it/eity4469xdj91.jpg",
-      "icon": "Heart"
+      "icon": "User"
     },
     {
       "id": 13,
       "name": "Farah Karim",
       "role": "Urzikstani Freedom Fighter / Commander",
       "description": "Leader of the Urzikstani Liberation Force and a determined freedom fighter against Russian occupation.",
-      "traits": ["Leadership", "Resilient", "Strategic"],
+      "traits": ["Leadership", "Resilient", "Strategic", "Courageous", "Determined", "Inspirational", "Tactical", "Resourceful", "Loyal", "Strong-Willed", "Honorable"],
       "fullDescription": "Farah is a fierce and capable leader who has been fighting for her country since she was a child. Her personal history and dedication to liberating Urzikstan are central to the story of the Modern Warfare reboot. She is a master tactician and an expert in guerrilla warfare.",
       "image": "https://i.pinimg.com/736x/31/56/4c/31564cb4d3939b9331705a3513621c2b.jpg",
       "icon": "Shield"
@@ -228,7 +228,7 @@ export const gameData = {
       "name": "Phillip Graves",
       "role": "Commander, Shadow Company",
       "description": "The enigmatic commander of the private military company, Shadow Company. He is a pragmatic leader with a hidden agenda.",
-      "traits": ["Ruthless", "Ambitious", "Strategic"],
+      "traits": ["Ruthless", "Ambitious", "Strategic", "Cunning", "Resourceful", "Manipulative", "Tactical", "Decisive", "Loyal", "Strong-Willed", "Honorable"],
       "fullDescription": "Graves presents himself as an ally to Task Force 141 in their hunt for a new threat. However, his true intentions are revealed, putting him in direct conflict with his former allies. His military expertise and powerful resources make him a formidable adversary.",
       "image": "https://preview.redd.it/mw2-what-do-you-guys-think-about-the-fan-theory-that-graves-v0-6wtdysqy5kbd1.jpg?width=640&crop=smart&auto=webp&s=74d0c08b3358ff84424dccaf5dfb094308272718",
       "icon": "Target"
@@ -310,7 +310,7 @@ export const gameData = {
       "description": "Experienced SAS captain and Price's former mentor, known for his sniper expertise and tactical knowledge.",
       "traits": ["Sniper Expert", "Mentor Figure", "Tactical Wisdom"],
       "fullDescription": "Captain MacMillan is a living legend in the SAS. He serves as Captain Price's mentor during a harrowing mission to assassinate Imran Zahkaev in the past. Despite being injured, he displays incredible resilience and strategic cunning, becoming a key figure in Price's development as a leader.",
-      "image": "https://pm1.aminoapps.com/7414/d1de2217ce41deb83f727e8a456859c7e1d5f12dr1-1080-622v2_00.jpg",
+      "image": "https://i.namu.wiki/i/LOz_mvnX1KSJRBMKOFkNjlCit6g72eqDGe-d9ylzLYUzM6qSruUPOIToVHWsm1WsSSwROqN59KMFv0qpgo6MAQ.webp",
       "icon": "Target"
     },
     {
@@ -378,7 +378,7 @@ export const gameData = {
       "name": "General Shepherd",
       "role": "US Army General / Antagonist",
       "description": "A highly ambitious and manipulative military leader who orchestrates a global conflict for his own vengeful agenda.",
-      "traits": ["Ambitious", "Manipulative", "Vengeful", "Ruthless"],
+      "traits": ["Ambitious", "Manipulative", "Vengeful", "Ruthless", "Cunning", "Strategic", "Deceptive", "Power-Hungry", "Calculating", "Cold", "Determined", "Strong-Willed", "Authoritative", "Commanding", "Patriotic"],
       "fullDescription": "General Shepherd is the commander of the U.S. Army Rangers and the founder of the elite Task Force 141. Haunted by the loss of 30,000 of his men to a nuclear blast, he becomes obsessed with vengeance. He betrays his own forces, killing fan-favorites Ghost and Roach, to frame Makarov and incite a global war, believing that a manufactured conflict is the only way to restore America's former glory and secure his legacy. His famous quote, 'The more things change, the more they stay the same,' encapsulates his cynical view of history and conflict.",
       "game": "Call of Duty: Modern Warfare 2",
       "image": "https://i.pinimg.com/736x/1d/14/b6/1d14b6f2c6db5b94ab222356325bfd3b.jpg",
@@ -411,7 +411,7 @@ export const gameData = {
             type: "Tier 1 Special Forces (United Kingdom)",
             description: "The United Kingdom's premier special forces unit, specializing in counter-terrorism, hostage rescue, and covert reconnaissance. Captain Price and Gaz are notable members of the SAS. They frequently serve as a foundational element of the Coalition and Task Force 141 in both the original and reboot series, known for their discipline and effectiveness in global operations.",
             specs: ["'Who Dares Wins'", "Counter-terrorism", "Intelligence Gathering", "Direct Action"],
-            image: "https://i.pinimg.com/736x/2b/21/62/2b2162dfc13034f036959366b6638e19.jpg", 
+            image: "https://images.steamusercontent.com/ugc/1754686618779569038/158591B6DAE6E46E0306E4ACFDC7513511043417/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
             icon: "Shield"
         },
         {
@@ -446,9 +446,18 @@ export const gameData = {
             name: "Delta Force",
             type: "Tier 1 Special Forces (United States)",
             description: "Officially the 1st Special Forces Operational Detachment-Delta (1st SFOD-D), this is the U.S. Army's top-tier counter-terrorism and special mission unit. They were prominently featured in *Modern Warfare 3 (2011)*, playing a significant role in the ongoing conflict against the Russian Ultranationalists on American soil and globally.",
-            specs: ["Counter-terrorism", "Hostage Rescue", "Direct Action", "Special Reconnaissance"],
+            specs: ["Counter-terrorism", "Hostage Rescue", "Direct Action", "Special Reconnaissance", "Elite", ],
             image: "https://i.ytimg.com/vi/a72f7mHIpMI/maxresdefault.jpg", 
             icon: "Lightning"
+        },
+        {
+            id: 18,
+            name: "Navy SEALs (United States)",
+            type: "Tier 1 Special Forces (United States)",
+            description: "The United States Navy's principal special operations force, specializing in maritime, jungle, urban, and cold-weather warfare (Sea, Air, and Land). They made prominent appearances in the original *Modern Warfare 2 (2009)* during the mission 'The Only Easy Day... Was Yesterday,' where they assaulted an oil rig to rescuing a high-value prisoner. They also supported Delta Force operations in *Modern Warfare 3 (2011)*, notably in the attack on the Russian submarine.",
+            specs: ["Maritime Operations", "Direct Action", "Counter-terrorism", "Underwater Demolition", "Special Reconnaissance", "Hostage Rescue", "Tier 1 Special Forces", ],
+            image: "https://images.steamusercontent.com/ugc/404558073169933902/9356B1AE2F3A1A66E044AF7198CD554DD50F55A0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", // Placeholder image
+            icon: "Trident"
         },
         {
             id: 7,
@@ -467,15 +476,6 @@ export const gameData = {
             specs: ["Counter-narcotics", "Border Security", "Direct Action", "Alliance with TF141"],
             image: "https://img.gta5-mods.com/q95/images/mwii-mexican-special-forces-los-vaqueros-kit-pack-for-mp-male/e42b23-Chokehold.jpg", 
             icon: "Badge"
-        },
-        {
-            id: 9,
-            name: "NATO / Coalition Forces",
-            type: "Multi-national Military Alliance",
-            description: "The broader military alliance representing the combined conventional forces of Western nations, including the U.S. and U.K. They provide the large-scale military framework, air support, and logistics that support the smaller, specialized operations of groups like the SAS and Task Force 141. They are the overarching friendly military faction.",
-            specs: ["Conventional Warfare", "Air & Naval Support", "Logistics", "Joint Operations"],
-            image: "https://images.unsplash.com/photo-1507721999468-b769260d37e2?w=300&h=200&fit:crop", 
-            icon: "Globe"
         },
         {
             id: 10,
@@ -534,13 +534,103 @@ export const gameData = {
       ],
       vehicles: [
         {
-          id: 8,
-          name: "AH-64 Apache",
-          type: "Attack Helicopter",
-          description: "Twin-turboshaft attack helicopter with advanced targeting systems.",
-          specs: ["Twin-engine", "Hellfire missiles", "30mm chain gun"],
-          image: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=300&h=200&fit=crop",
-          icon: Zap
+            "id": 19,
+            "name": "M1 Abrams (Main Battle Tank)",
+            "type": "Main Battle Tank (MBT) (United States)",
+            "description": "The primary main battle tank of the U.S. Army and a symbol of American ground power. Featured in the classic *Modern Warfare 2 (2009)* during the defense of the American suburbs against the Russian invasion. Known for its powerful 120mm smoothbore cannon, sophisticated Chobham armor (often with Depleted Uranium components), and its distinct, powerful multifuel turbine engine. It is the backbone of the U.S. ground forces.",
+            "specs": ["120mm M256 Smoothbore Cannon", "Composite/DU Armor", "1500 hp Turbine Engine", "MBT"],
+            "image": "https://cdnb.artstation.com/p/assets/images/images/031/280/923/large/isaac-oster-1165626250321433681-account-id3.jpg?1603160853", 
+            "icon": "Tank"
+        },
+        {
+            "id": 20,
+            "name": "UH-60 Black Hawk",
+            "type": "Utility Tactical Transport Helicopter (United States)",
+            "description": "The ubiquitous utility and air assault helicopter of the U.S. military. The Black Hawk is a constant presence, used for inserting and extracting Special Operations forces, troop transport, and MEDEVAC. It is the player's primary means of transport in many missions across the series, notably in the air assault missions of both the classic and reboot timelines.",
+            "specs": ["Twin-engine Medium-lift Rotorcraft", "11-Soldier Capacity", "Air Assault & Transport", "Door-mounted Machine Guns"],
+            "image": "https://cdnb.artstation.com/p/assets/images/images/036/333/153/large/sebastien-gregoire-blackhawk-01.jpg?1617371507", 
+            "icon": "Helicopter"
+        },
+        {
+            "id": 21,
+            "name": "AH-64 Apache",
+            "type": "Attack Helicopter (United States)",
+            "description": "The U.S. Army's primary attack helicopter, designed for anti-armor and close air support. Players frequently fly or ride in this aircraft, utilizing its powerful 30mm chain gun and missile armament (like Hellfires) to clear hostile vehicles and entrenched positions. It appears in critical missions in both the original and reboot series, providing indispensable airborne firepower.",
+            "specs": ["30mm M230 Chain Gun", "AGM-114 Hellfire Missiles", "Tandem-seat Cockpit", "Attack Rotorcraft"],
+            "image": "https://www.boeing.com/content/dam/boeing/boeingdotcom/features/2022/10/modernized-apache-hero.jpg", 
+            "icon": "Target"
+        },
+        {
+            "id": 22,
+            "name": "Stryker (ICV)",
+            "type": "Infantry Carrier Vehicle (ICV) (United States)",
+            "description": "An 8-wheeled armored fighting vehicle used by the U.S. Army's Stryker Brigade Combat Teams. It is designed to rapidly transport a squad of infantry while providing armored protection and supporting fire. It is often seen alongside U.S. forces during urban combat and plays a prominent role in the invasion and defense missions of *Modern Warfare 2 (2009)*.",
+            "specs": ["8x8 Wheeled APC", "M2 .50 Caliber Machine Gun", "High Mobility", "Infantry Transport"],
+            "image": "https://i.ytimg.com/vi/rvW56FtD87s/maxresdefault.jpg", 
+            "icon": "Wheel"
+        },
+        {
+            "id": 23,
+            "name": "BTR-80 / BTR-80A",
+            "type": "Armored Personnel Carrier (APC) (Russia)",
+            "description": "A series of 8-wheeled, amphibious armored personnel carriers used by the Russian Armed Forces and the Ultranationalist/Konni forces. They are common light-armored threats encountered by players, identifiable by their wheeled design and turret-mounted weapon. The BTR-80A variant, with its 30mm autocannon, is a particularly dangerous and frequent enemy vehicle in the series.",
+            "specs": ["8x8 Wheeled APC", "14.5mm KPVT MG or 30mm Autocannon", "Amphibious Capability", "Infantry Transport"],
+            "image": "https://i.pinimg.com/736x/af/90/0c/af900c60e317a2b8470102f4a036e187.jpg", 
+            "icon": "Commando"
+        },
+        {
+            "id": 24,
+            "name": "HMMWV / Humvee",
+            "type": "Light Utility Vehicle / Armored Car (United States)",
+            "description": "The High Mobility Multipurpose Wheeled Vehicle is the iconic light tactical vehicle of the U.S. military. It serves in various roles: transport, ambulance, and weapons carrier (often mounting a .50 cal or grenade launcher). Its distinct silhouette is constantly present as an allied vehicle in nearly every U.S.-led mission and often a drivable vehicle in multiplayer/co-op modes.",
+            "specs": ["4x4 Light Truck", "Various Armaments (.50 Cal, Grenade Launcher)", "High Off-Road Mobility", "Diesel Engine"],
+            "image": "https://i.pinimg.com/1200x/50/97/cc/5097cc8231f1d7b192ac8904bd357a1e.jpg", 
+            "icon": "Wheel"
+        },
+        {
+            "id": 25,
+            "name": "T-72 / T-90 Main Battle Tank",
+            "type": "Main Battle Tank (MBT) (Russia)",
+            "description": "The backbone of Russian and Ultranationalist/Konni armored divisions. The T-72 is a frequent and dangerous enemy in the campaigns. Its later variants (like the T-90 in some depictions) boast a powerful 125mm smoothbore gun and an autoloader. The player must often use anti-tank weapons like the Javelin or tank battles to neutralize this threat.",
+            "specs": ["125mm Smoothbore Cannon", "Autoloader System", "Reactive Armor (later variants)", "MBT"],
+            "image": "https://images.steamusercontent.com/ugc/88226010742421724/D49639D7D2BD5ED4A6EAA3162B6087C4201F7D9C/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            "icon": "Tank"
+        },
+        {
+            "id": 26,
+            "name": "MIL Mi-24 'Hind'",
+            "type": "Attack Helicopter / Gunship (Russia)",
+            "description": "A large and heavily armed attack helicopter, nicknamed the 'Flying Tank'. The Mi-24 is a major aerial threat to allied forces, often used for transporting small squads and providing devastating rocket and cannon fire. It is frequently seen in missions against Russian and Ultranationalist forces and appears as a powerful Killstreak in multiplayer.",
+            "specs": ["12.7mm or 30mm Cannon", "Rocket Pods / Anti-Tank Missiles", "Low-Capacity Troop Transport", "Armored Cockpit"],
+            "image": "https://i.pinimg.com/736x/ba/20/df/ba20dff53f9fbaf864d4951a2da88dd0.jpg", 
+            "icon": "Target"
+        },
+        {
+            "id": 27,
+            "name": "V-22 Osprey",
+            "type": "Tiltrotor Multi-Mission Aircraft (United States)",
+            "description": "A unique aircraft that combines the vertical takeoff and landing of a helicopter with the speed and range of a turboprop plane. The V-22 is used by the U.S. Marines and Special Operations for long-range insertion and extraction. It is most prominently featured in the newer *Modern Warfare* games for transporting and dropping off large numbers of troops or equipment.",
+            "specs": ["Tiltrotor Design", "Vertical Takeoff/Landing (VTOL)", "High Speed/Range", "Troop/Cargo Transport"],
+            "image": "https://i.pinimg.com/736x/16/60/30/1660301eae896f86900da58b81bb1bd9.jpg", 
+            "icon": "Helicopter"
+        },
+        {
+            "id": 28,
+            "name": "A-10 Thunderbolt II 'Warthog'",
+            "type": "Close Air Support (CAS) Attack Aircraft (United States)",
+            "description": "The legendary ground-attack aircraft known for its durability and powerful GAU-8/A Avenger 30mm rotary cannon, often associated with the distinct 'BRRRT' sound. While not player-flyable, it appears as a devastating Killstreak reward or a crucial friendly air support asset to eliminate enemy armor and fortified positions in the campaign and multiplayer.",
+            "specs": ["30mm GAU-8/A Avenger Cannon", "Large Payload of Ordnance", "Extreme Durability", "CAS Fixed-Wing"],
+            "image": "https://cdna.artstation.com/p/assets/images/images/031/421/816/large/sebastien-gregoire-veh-warthog-02.jpg?1603577002", 
+            "icon": "Plane"
+        },
+        {
+            "id": 29,
+            "name": "UGV / Wheelson",
+            "type": "Unmanned Ground Vehicle (UGV) (United States)",
+            "description": "A player-controlled, miniature remote tank used as a powerful killstreak or mission support asset. Known as the UGV in the classic *Modern Warfare 3* mission 'Persona Non Grata' and the Wheelson in the rebooted *Modern Warfare 2*. It features a remote-operated turret and high-speed mobility to flank and destroy infantry and lightly armored vehicles.",
+            "specs": ["Remote-Controlled", "Miniature Tank Chassis", "Automatic Cannon or Grenade Launcher", "Anti-Personnel/Light-Vehicle"],
+            "image": "https://i.ytimg.com/vi/ep13fAM9DdE/maxresdefault.jpg", 
+            "icon": "Tank"
         }
       ]
     },

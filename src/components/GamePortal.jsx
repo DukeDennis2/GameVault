@@ -11,6 +11,7 @@ import { gameData } from '../data/games';
 import CharacterProfile from './CharacterProfile'; 
 import WeaponProfile from './WeaponProfile'; 
 import GroupsProfile from './GroupsProfile'; 
+import VehiclesProfile from './Vehicles';
 
 
 
@@ -43,12 +44,13 @@ const iconMapping = {
     Home: Home,
     Star: Star,
     Target: Target,
+    Users: Users,
   };
 
   const categoryIcons = {
     characters: Users,
-    weapons: Apple,
-    groups: ShieldCheck, 
+    weapons: Sword,
+    groups: Users, 
     vehicles: Car,
     locations: Crown
   };
@@ -240,6 +242,9 @@ const GamePage = () => {
         return <WeaponProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
       } else if (selectedCategory === 'groups') { // <-- New conditional rendering for groups
         return <GroupsProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
+      }
+      else if (selectedCategory === 'vehicles') {
+        return <VehiclesProfile item={selectedItem} game={game} onBack={handleBackToGrid} />;
       }
     }
 
