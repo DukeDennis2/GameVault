@@ -387,15 +387,396 @@ export const gameData = {
       ],
       weapons: [
         {
-          id: 7,
-          name: "ACR",
-          type: "Assault Rifle",
-          description: "Advanced Combat Rifle with superior accuracy and customization options.",
-          specs: ["6.8mm Remington SPC", "30-round magazine", "Modular design"],
-          image: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=300&h=200&fit=crop",
-          icon: Crosshair
+            id: 1,
+            name: "M4A1",
+            type: "Assault Rifle",
+            description: "A highly versatile and reliable automatic rifle. Excellent all-around performance.",
+            ammo: "5.56x45mm NATO",
+            image: "https://preview.redd.it/3rqz35bnd0m51.jpg?width=1080&crop=smart&auto=webp&s=51edf34a193a4911a5d354bcaf033bc882fcb019",
+            ratings: { damage: 3, accuracy: 4, range: 4, fireRate: 4, mobility: 4 }
+        },
+        {
+            id: 2,
+            name: "Kilo 141",
+            type: "Assault Rifle",
+            description: "Fully automatic assault rifle with an ergonomic design that improves handling and maintains a steady fire rate.",
+            ammo: "5.56x45mm NATO",
+            image: "https://www.charlieintel.com/cdn-image/wp-content/uploads/2024/01/23/kilo-141-mcw-warzone-assault-rifle.jpg?width=1200&quality=60&format=auto",
+            ratings: { damage: 3, accuracy: 4, range: 4, fireRate: 4, mobility: 3 }
+        },
+        {
+        id: 7.5, 
+        name: "M13",
+        type: "Assault Rifle",
+        description: "A fully automatic rifle with a very high rate of fire and exceptionally low recoil, making it highly effective at medium range.",
+        ammo: "5.56x45mm NATO",
+        image: "https://i.redd.it/i-made-kyle-gaz-garrick-m13-rifle-mcx-rattler-from-the-v0-kdnxuo9wbb3a1.png?width=1920&format=png&auto=webp&s=5a634d86d267dcf6fe531ccb0f47821c25a9682a", 
+        ratings: { damage: 3, accuracy: 5, range: 3, fireRate: 5, mobility: 4 }
+        },
+        {
+            id: 3,
+            name: "SCAR-L",
+            type: "Assault Rifle",
+            description: "A modular, heavy-hitting assault rifle. Slower fire rate balanced by high damage and stable recoil.",
+            ammo: "7.62x51mm NATO",
+            image: "https://img.gamewith.net/article_tools/cod-modernwarfare/gacha/12631.png",
+            ratings: { damage: 4, accuracy: 3, range: 4, fireRate: 3, mobility: 3 }
+        },
+        {
+            id: 4,
+            name: "Grau 5.56",
+            type: "Assault Rifle",
+            description: "Lightweight and maneuverable 5.56 platform with exceptional range and very manageable recoil.",
+            ammo: "5.56x45mm NATO",
+            image: "https://cdn-cf.ginx.tv/imgcdn/H_JDasTP8WSRSIVAgDBi3Ot5Mmydalf0eHX9nAzZOLo/rs:fill:720:0:1/g:ce/aHR0cHM6Ly93d3cuZ2lueC50di91cGxvYWRzMi9XYXJ6b25lL2dyYXVfNS41NV8xLmpwZw",
+            ratings: { damage: 3, accuracy: 4, range: 4, fireRate: 4, mobility: 4 }
+        },
+        {
+            id: 5,
+            name: "FAL",
+            type: "Battle Rifle",
+            description: "A semi-automatic battle rifle. High damage output requiring high precision and quick trigger finger.",
+            ammo: "7.62x51mm NATO",
+            image: "https://img.gamewith.net/article_tools/cod-modernwarfare/gacha/12629.png",
+            ratings: { damage: 4, accuracy: 4, range: 4, fireRate: 2, mobility: 3 }
+        },
+        {
+            id: 6,
+            name: "Oden",
+            type: "Assault Rifle",
+            description: "Bullpup assault rifle firing hard-hitting 12.7mm ammunition. Slow rate of fire but massive damage.",
+            ammo: "12.7x55mm",
+            image: "https://static0.srcdn.com/wordpress/wp-content/uploads/2021/06/Warzone-Oden.webp-.jpg?w=1600&h=1200&fit=crop",
+            ratings: { damage: 5, accuracy: 3, range: 4, fireRate: 2, mobility: 2 }
+        },
+        {
+            id: 7,
+            name: "FR 5.56",
+            type: "Assault Rifle",
+            description: "A 3-round burst bullpup rifle. A precise burst is extremely deadly at intermittent ranges.",
+            ammo: "5.56x45mm NATO",
+            image: "https://static0.thegamerimages.com/wordpress/wp-content/uploads/2023/11/modern-warfare-3-fr-5-56-general-use-build-preview.jpg?w=1600&h=900&fit=crop",
+            ratings: { damage: 3, accuracy: 4, range: 3, fireRate: 4, mobility: 3 }
+        },
+        {
+            id: 9,
+            name: "AUG",
+            type: "Submachine Gun",
+            description: "A modular SMG platform that offers conversion to a burst-fire rifle for improved range.",
+            ammo: "9mm Parabellum",
+            image: "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/09/call-of-duty-warzone-best-aug-warzone-setup-clean.jpg",
+            ratings: { damage: 3, accuracy: 3, range: 3, fireRate: 4, mobility: 4 }
+        },
+        {
+            id: 29,
+            name: "AK-47",
+            type: "Assault Rifle",
+            description: "A large-caliber, powerful automatic rifle known for its immense stopping power.",
+            ammo: "7.62x39mm Soviet",
+            image: "https://images.steamusercontent.com/ugc/2019331435743752145/BE1F88FD2BE573C1151DF7031E2A0B769CF6C67F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 5, accuracy: 3, range: 4, fireRate: 3, mobility: 3 }
+        },
+        // --- SUBMACHINE GUNS (SMG) ---
+        {
+            id: 8,
+            name: "MP5",
+            type: "Submachine Gun",
+            description: "Legendary 9mm SMG. Unmatched balance of stability, mobility, and close-quarters lethality.",
+            ammo: "9mm Parabellum",
+            image: "https://img.gamewith.net/article_tools/cod-modernwarfare/gacha/12634.png",
+            ratings: { damage: 3, accuracy: 4, range: 2, fireRate: 4, mobility: 5 }
+        },
+        {
+            id: 10,
+            name: "P90",
+            type: "Submachine Gun",
+            description: "Bullpup SMG with a unique helical magazine providing high capacity and blazing fire rate.",
+            ammo: "5.7x28mm FN",
+            image: "https://www.gamerevolution.com/wp-content/uploads/sites/2/2020/03/Modern-Warfare-Best-P90-Setup.jpg",
+            ratings: { damage: 2, accuracy: 3, range: 2, fireRate: 5, mobility: 5 }
+        },
+        {
+            id: 11,
+            name: "PP19 Bizon",
+            type: "Submachine Gun",
+            description: "A well-balanced SMG featuring a high capacity helical magazine for sustained fire.",
+            ammo: "9x18mm Makarov",
+            image: "https://images.steamusercontent.com/ugc/792003124795612560/C93F0A1E81EDA53DFACA3D973B68BF87AD1CFDC5/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 3, accuracy: 4, range: 3, fireRate: 3, mobility: 4 }
+        },
+        {
+            id: 12,
+            name: "UMP 45",
+            type: "Submachine Gun",
+            description: "A powerful, slow-firing SMG that uses .45 ACP rounds for superior close-range stopping power.",
+            ammo: ".45 ACP",
+            image: "https://images.steamusercontent.com/ugc/1690528250997592166/47E658ADD0763579F97C975277DD088AAAE22F8A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 3, range: 2, fireRate: 2, mobility: 4 }
+        },
+        {
+            id: 15, // Use the next sequential ID
+            name: "Vector SMG",
+            type: "Submachine Gun",
+            description: "A futuristic SMG known for its unique Super V system, giving it the highest rate of fire and near-zero muzzle climb for close-quarters domination.",
+            ammo: ".45 ACP / 9mm Parabellum", // Common calibers
+            image: "https://images.steamusercontent.com/ugc/1822292359479186970/631193976F49EA29CF9A60518CC274FBB6453404/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 3, accuracy: 5, range: 2, fireRate: 5, mobility: 5 }
+        },
+        
+        // --- MARKSMAN RIFLES (MR) & BATTLE RIFLES ---
+         {
+            id: 10,
+            name: "Tempus Torrent",
+            type: "Marksman Rifle",
+            description: "A high-velocity battle rifle known for a fast time-to-kill (TTK) but demanding trigger discipline.",
+            ammo: "7.62x51mm",
+            image: "https://mitchcactus.co/wp-content/uploads/2024/12/Black-Ops-6-weapons.webp", 
+            ratings: { damage: 4, accuracy: 3, range: 4, fireRate: 4, mobility: 3 }
+        },
+        {
+            id: 13,
+            name: "EBR-14",
+            type: "Marksman Rifle",
+            description: "A semi-automatic battle rifle (M14 EBR) capable of rapid follow-up shots at long range.",
+            ammo: "7.62x51mm NATO",
+            image: "https://images.steamusercontent.com/ugc/1011563111882216146/50C03215D7914A02C7D38F554AC04EF5EEBD16F8/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 4, range: 5, fireRate: 3, mobility: 2 }
+        },
+        {
+            id: 14,
+            name: "MK2 Carbine",
+            type: "Marksman Rifle",
+            description: "A highly accurate lever-action rifle. Will neutralize an enemy with one well-placed shot to the chest.",
+            ammo: "9x39mm subsonic", // Common CODWW setting for high damage
+            image: "https://cdna.artstation.com/p/assets/images/images/026/129/974/large/ben-garnell-sbeta-04.jpg?1587969420",
+            ratings: { damage: 5, accuracy: 4, range: 4, fireRate: 1, mobility: 4 }
+        },
+        {
+            id: 15,
+            name: "Kar98k",
+            type: "Marksman Rifle",
+            description: "A classic bolt-action rifle. Unmatched handling speed for a high-powered, one-shot weapon.",
+            ammo: "7.92x57mm Mauser",
+            image: "https://images.steamusercontent.com/ugc/1646587525748948886/EF13DB0D6FF5930CA3FA73C232B1317593253DEF/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 5, accuracy: 5, range: 5, fireRate: 1, mobility: 3 }
+        },
+        {
+            id: 8,
+            name: "SP-R 208",
+            type: "Marksman Rifle",
+            description: "A high-accuracy bolt-action rifle designed for long-range, one-shot kills. Reloads slowly between shots.",
+            ammo: ".300 Win Mag",
+            image: "https://images.steamusercontent.com/ugc/1843685635108739035/B6951924CECDB1DD37BAE69D91271B23561B21E2/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 5, accuracy: 4, range: 5, fireRate: 2, mobility: 3 }
+        },
+        {
+            id: 9,
+            name: "SKS",
+            type: "Marksman Rifle",
+            description: "A hard-hitting, semi-automatic carbine that balances damage with a manageable rate of fire.",
+            ammo: "7.62x39mm",
+            image: "https://assetsio.gnwcdn.com/best-sks-marksman-rifle-loadout-warzone-attachments-call-duty.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp", 
+            ratings: { damage: 4, accuracy: 4, range: 4, fireRate: 3, mobility: 4 }
+        },
+        // --- SNIPER RIFLES (SR) ---
+        {
+            id: 16,
+            name: "Dragunov",
+            type: "Sniper Rifle",
+            description: "A gas-operated, semi-automatic sniper rifle allowing for rapid follow-up shots at range.",
+            ammo: "7.62x54mmR",
+            image: "https://images.steamusercontent.com/ugc/2313223699834352083/B984FB20232130AC78AB19E8D84FEC164C1BC1CD/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 5, range: 5, fireRate: 2, mobility: 2 }
+        },
+        {
+            id: 17,
+            name: "Barrett .50 Cal",
+            type: "Sniper Rifle",
+            description: "A semi-automatic anti-material rifle. Unrivaled damage and extreme long-range capability.",
+            ammo: ".50 BMG (12.7x99mm)",
+            image: "https://images.steamusercontent.com/ugc/2055382280785742423/F28F1971B8A66814D4861554EB9BCAE9717B4C18/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 5, accuracy: 5, range: 5, fireRate: 1, mobility: 1 }
+        },
+
+        // --- LIGHT MACHINE GUNS (LMG) ---
+        {
+            id: 18,
+            name: "PKM",
+            type: "Light Machine Gun",
+            description: "A large-caliber machine gun offering sustained, high-damage fire with massive capacity.",
+            ammo: "7.62x54mmR",
+            image: "https://images.steamusercontent.com/ugc/1865053375990995203/8270A1C04EFAF392DB3461A6C873612E3C694A15/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 3, range: 4, fireRate: 4, mobility: 1 }
+        },
+        {
+            id: 19,
+            name: "SA87",
+            type: "Light Machine Gun",
+            description: "A bullpup LMG with a slow, steady fire rate that is effective at medium-to-long range.",
+            ammo: "5.56x45mm NATO",
+            image: "https://assetsio.gnwcdn.com/sa87-loadout-warzone-best-call-of-duty-attachments.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+            ratings: { damage: 3, accuracy: 4, range: 4, fireRate: 3, mobility: 2 }
+        },
+        {
+            id: 20,
+            name: "MG34",
+            type: "Light Machine Gun",
+            description: "A vintage, high fire rate LMG. Highly effective for area suppression and defense.",
+            ammo: "7.92x57mm Mauser",
+            image: "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/06/call-of-duty-warzone-best-ugm-loadout.jpg", 
+            ratings: { damage: 4, accuracy: 2, range: 3, fireRate: 5, mobility: 1 }
+        },
+        
+        // --- SHOTGUNS (SG) ---
+        {
+            id: 21,
+            name: "Model 680",
+            type: "Shotgun",
+            description: "A reliable, well-rounded 12 gauge pump-action shotgun. High damage, low rate of fire.",
+            ammo: "12 Gauge Shells",
+            image: "https://images.steamusercontent.com/ugc/1002556983889248334/D2A1A3FB4E3A537AC57393090F0A8C66CB8D92A1/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 5, accuracy: 2, range: 1, fireRate: 1, mobility: 3 }
+        },
+        {
+            id: 22,
+            name: "Origin 12 Shotgun",
+            type: "Shotgun",
+            description: "A semi-automatic shotgun with a large ammo capacity that allows for continuous, rapid firing.",
+            ammo: "12 Gauge Shells",
+            image: "https://images.steamusercontent.com/ugc/1831298289891590204/36D820BCA8BFE76B487CA21CFE965085CF50BE75/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 1, range: 1, fireRate: 4, mobility: 4 }
+        },
+        {
+            id: 11,
+            name: "M1014",
+            type: "Shotgun",
+            description: "A semi-automatic shotgun prized for its blend of high stopping power and a quick firing follow-up shot.",
+            ammo: "12 Gauge",
+            image: "https://images.steamusercontent.com/ugc/1754735193903902211/6B9582987F3ED62A2F8E9E1AA008ACA2FFFEA064/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 5, accuracy: 2, range: 2, fireRate: 4, mobility: 3 }
+        },
+        {
+            id: 12,
+            name: "SPAS-12",
+            type: "Shotgun",
+            description: "A classic pump-action shotgun with devastating close-quarters damage but a slow rate of fire.",
+            ammo: "12 Gauge",
+            image: "https://images.steamusercontent.com/ugc/1933750742388893441/D8B463597B61D366A57CCFCEEF0AADE45005827F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 5, accuracy: 3, range: 2, fireRate: 1, mobility: 3 }
+        },
+        {
+            id: 13,
+            name: "Model 1887",
+            type: "Shotgun",
+            description: "A highly iconic lever-action shotgun with exceptional range for its class, but a very slow cycle time.",
+            ammo: "12 Gauge",
+            image: "https://images.steamusercontent.com/ugc/2071134789247572190/4F381B34D5FD96256C283204C777952BF4DBCB7C/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 4, accuracy: 3, range: 3, fireRate: 1, mobility: 3 }
+        },
+
+        // --- HANDGUNS (HG) ---
+        {
+            id: 23,
+            name: "Desert Eagle",
+            type: "Handgun",
+            description: "A massive caliber semi-automatic pistol. Two-shot kill potential but high recoil.",
+            ammo: ".50 Action Express",
+            image: "https://images.steamusercontent.com/ugc/1645462021478215753/6362559703DCACE9EC2A125DF5B837BE51A56DEF/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 5, accuracy: 3, range: 1, fireRate: 1, mobility: 3 }
+        },
+        {
+            id: 24,
+            name: "1911",
+            type: "Handgun",
+            description: "A well-rounded, classic semi-automatic sidearm chambered in .45 ACP.",
+            ammo: ".45 ACP",
+            image: "https://images.steamusercontent.com/ugc/912421707947412286/6A1893646911FA73D2235E244A3FFE756CC4A8AD/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 3, accuracy: 3, range: 1, fireRate: 3, mobility: 5 }
+        },
+        {
+            id: 25,
+            name: "M19",
+            type: "Handgun",
+            description: "A semi-automatic 9mm pistol with excellent stability and a rapid cycle rate.",
+            ammo: "9mm Parabellum",
+            image: "https://images.steamusercontent.com/ugc/1662358552795722725/28DA8792A133CE370A761E91094CA37D0CE9248A/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 2, accuracy: 4, range: 1, fireRate: 4, mobility: 5 }
+        },
+        {
+            id: 26,
+            name: ".357 Revolver",
+            type: "Handgun",
+            description: "A heavy-caliber revolver. High damage with a slow rate of fire and high recoil.",
+            ammo: ".357 Magnum",
+            image: "https://images.steamusercontent.com/ugc/1479949244945139407/AE9EB419DCD60583790CCE21243D298896905349/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
+            ratings: { damage: 4, accuracy: 3, range: 2, fireRate: 1, mobility: 2 }
+        },
+        {
+            id: 14,
+            name: "USP .45",
+            type: "Pistol",
+            description: "A reliable, hard-hitting sidearm that uses a large caliber round for high damage per shot.",
+            ammo: ".45 ACP",
+            image: "https://images.steamusercontent.com/ugc/842589945089423411/07B3ECD49271E5888483F10B65CFE5F5E5752B1D/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false", 
+            ratings: { damage: 3, accuracy: 4, range: 2, fireRate: 3, mobility: 4 }
+        },
+        
+        // --- LAUNCHERS ---
+        {
+            id: 27,
+            name: "RPG-7",
+            type: "Launcher",
+            description: "A portable, shoulder-fired rocket launcher. Highly effective against infantry and vehicles.",
+            ammo: "85mm HEAT Warhead",
+            image: "https://img.gamewith.net/article/thumbnail/rectangle/42364.png", 
+            ratings: { damage: 5, accuracy: 1, range: 3, fireRate: 1, mobility: 1 }
+        },
+        {
+            id: 28,
+            name: "Javelin",
+            type: "Launcher",
+            description: "A fire-and-forget guided missile launcher. Excellent against armored targets from any range.",
+            ammo: "Tandem-Charge HEAT Missile",
+            image: "https://i.imgur.com/CEfg2Yx.png", 
+            ratings: { damage: 5, accuracy: 5, range: 5, fireRate: 1, mobility: 1 }
+        },
+        {
+            id: 16,
+            name: "MGL-32",
+            type: "Grenade Launcher",
+            description: "A six-shot, rotary-fed grenade launcher. Delivers massive saturation fire at medium ranges, ideal for area denial and clearing entrenched enemies.",
+            ammo: "40mm Grenade",
+            image: "https://images.steamusercontent.com/ugc/854978386862807538/53D0CA84EA2F1D7E49A6D79A822C2464F91C407D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 4, accuracy: 2, range: 3, fireRate: 4, mobility: 2 }
+        },
+        {
+            id: 18,
+            name: "Stinger",
+            type: "Surface-to-Air Missile",
+            description: "A heat-seeking missile system specialized in taking down aerial threats. Features a quick lock-on for reliable air defense.",
+            ammo: "FIM-92 Missile",
+            image: "https://i.imgur.com/R81zQZI.png",
+            ratings: { damage: 4, accuracy: 5, range: 5, fireRate: 2, mobility: 2 }
+        },
+        {
+            id: 19,
+            name: "XM25 ",
+            type: "Airburst Launcher",
+            description: "Fires smart 25mm airburst rounds. Can be set to detonate over cover, eliminating enemies that traditional direct-fire weapons cannot reach.",
+            ammo: "25mm Airburst Round",
+            image: "https://images.steamusercontent.com/ugc/2035110269104834530/2045D35E64F9703EC96F1324DE36492F32FC7232/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+            ratings: { damage: 3, accuracy: 4, range: 3, fireRate: 3, mobility: 3 }
+        },
+        {
+            id: 21,
+            name: "SMAW",
+            type: "Rocket Launcher",
+            description: "A reusable anti-armor and anti-fortification rocket launcher. Features a devastating direct-fire projectile with high velocity.",
+            ammo: "83mm HEDP Rocket",
+            image: "https://images.steamusercontent.com/ugc/18335865765606510565/F469E974B1EB1F5DA2D0E62C51144F77C0B621AE/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+            ratings: { damage: 5, accuracy: 3, range: 4, fireRate: 1, mobility: 3 }
         }
-      ],
+        ],
       groups: [
         {
             id: 1,
@@ -456,7 +837,7 @@ export const gameData = {
             type: "Tier 1 Special Forces (United States)",
             description: "The United States Navy's principal special operations force, specializing in maritime, jungle, urban, and cold-weather warfare (Sea, Air, and Land). They made prominent appearances in the original *Modern Warfare 2 (2009)* during the mission 'The Only Easy Day... Was Yesterday,' where they assaulted an oil rig to rescuing a high-value prisoner. They also supported Delta Force operations in *Modern Warfare 3 (2011)*, notably in the attack on the Russian submarine.",
             specs: ["Maritime Operations", "Direct Action", "Counter-terrorism", "Underwater Demolition", "Special Reconnaissance", "Hostage Rescue", "Tier 1 Special Forces", ],
-            image: "https://images.steamusercontent.com/ugc/404558073169933902/9356B1AE2F3A1A66E044AF7198CD554DD50F55A0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", // Placeholder image
+            image: "https://images.steamusercontent.com/ugc/404558073169933902/9356B1AE2F3A1A66E044AF7198CD554DD50F55A0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true", 
             icon: "Trident"
         },
         {

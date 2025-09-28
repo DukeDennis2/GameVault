@@ -42,3 +42,31 @@
   background: rgba(30, 41, 59, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* General styling for the button container */
+.scroll-to-top {
+  position: fixed; /* Ensures it stays in place */
+  bottom: 20px;    /* 20 pixels from the bottom */
+  right: 20px;     /* 20 pixels from the right side of the screen */
+  z-index: 1000;   /* Keeps it above other content */
+}
+
+/* Styling for the button itself */
+.scroll-button {
+  background-color: #007bff; /* Example background color */
+  color: white;              /* White text/arrow */
+  border: none;
+  border-radius: 50%;        /* Makes it circular */
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.scroll-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
